@@ -1,9 +1,8 @@
 # Chatbox AI
 
-Chatbox AI is a cross-platform desktop and mobile application that allows you to interact with AI-VERDE models through an intuitive chat interface.  
-It runs on **Windows, macOS, Linux, Android, iOS, and Web**.
+Chatbox AI is a cross-platform desktop and mobile application that allows you to interact with AI-VERDE models through an intuitive chat interface. It runs on **Windows, macOS, Linux, Android, iOS, and Web**.
 
-This will guide you through connecting your **AI-VERDE API Key**, configuring your models, and starting your first conversation.
+This will guide you through connecting your AI-VERDE API Key, configuring your models, and starting your first conversation.
 
 ## Prerequisites
 
@@ -37,7 +36,7 @@ Follow these steps to connect Chatbox AI with your AI-VERDE account:
    &nbsp;  
    ![chatbox ai](../assets/chatboxai02.png){: style="width:80%"}  
    &nbsp;
-You should now see the **AI-VERDE configuration panel** on the right.
+You should now see the AI-VERDE configuration panel on the right.
 1. Enter (or paste) your AI-VERDE API Key into the API Key field  
 2. Enter (or paste) your AI-VERDE API URL into the API Host field 
    &nbsp; 
@@ -64,7 +63,7 @@ Once your models are set up, chatting is simple:
    &nbsp;
    ![chatbox ai](../assets/chatboxai05.png){: style="width:95%"}
    &nbsp;
-3. Type your question or request in the chat box and press **"Enter"**  
+3. Type your question or request in the chat box and press "Enter".
 
 That’s it! You’re now chatting directly with your configured AI-VERDE model.
 

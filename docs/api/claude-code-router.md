@@ -1,7 +1,6 @@
 # Claude Code Router (using non-Anthropic Models)
-This guide explains how to connect **Claude Code** with **AI-VERDE** using the Claude Code Router. By linking your AI-VERDE API key and model, you can route requests from Claude Code to non-Anthropic models available through AI-VERDE.
-
-You can follow the steps below after installing Claude Code and Claude Code Router.  
+This guide explains how to connect Claude Code with AI-VERDE using the Claude Code Router. By linking your AI-VERDE API key and model, you can route requests from Claude Code to non-Anthropic models  through AI-VERDE.
+ 
 For more details on installation and usage, see the [Claude Code Router GitHub page](https://github.com/musistudio/claude-code-router).
 
 ## Prerequisites
@@ -19,7 +18,7 @@ For more details on installation and usage, see the [Claude Code Router GitHub p
    - Install the router by following the [Claude Code Router Setup Guide](https://github.com/musistudio/claude-code-router).  
 
 5. **Terminal Access**  
-   - Ensure you are using a terminal with **Claude Code** and **bash** available.
+   - Ensure you are using a terminal with Claude Code and bash available.
 
 ## 1. Starting Claude Code Router
 This step should only be needed the first time you use Claude Code Router.

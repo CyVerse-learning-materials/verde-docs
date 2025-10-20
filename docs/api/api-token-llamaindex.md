@@ -8,7 +8,7 @@ pip install llama-index-core llama-index-llms-litellm
 
 ## 2. Obtain variables to integrate AI-VERDE with LangChain
 
-You’ll need your **AI-VERDE API key** and **model ID** to connect to the API. Instructions for obtaining them are available here:
+You’ll need your AI-VERDE API key and model ID to connect to the API. Instructions for obtaining them are available here:
 
 **AI-VERDE API Key and API URL**  
     - Obtain your credentials by following the [AI-VERDE API Token Guide](api-token.md).  

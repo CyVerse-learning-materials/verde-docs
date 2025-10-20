@@ -10,8 +10,8 @@ Follow the steps below after installing Claude Code to configure your connection
 
 ## Prerequisites
 
-1. Your VERDE course or team must be configured to use Anthropic models (see instructor or team lead)
-2. Obtain your VERDE API Key. [Instructions can be found here](api-token.md)
+1. Your VERDE course or team must be configured to use Anthropic models (see instructor or team lead) 
+2. Obtain your VERDE API Key follow the [AI-VERDE API Token Guide](api-token.md)
 3. Install Claude Code. Instructions can be found here, [Anthropic’s website](https://www.anthropic.com/claude-code/).
 4. A terminal (bash) open on a system where Claude Code is installed.
 
