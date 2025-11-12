@@ -1,32 +1,48 @@
 # Claude Code Router (using non-Anthropic Models)
-You can follow these instructions to use your AI-VERDE API Key after installing Claude Code and Claude Code Router. More information on installing and using Claude Code Router can be found here, https://github.com/musistudio/claude-code-router.
+This guide explains how to connect Claude Code with AI-VERDE using the Claude Code Router. By linking your AI-VERDE API key and model, you can route requests from Claude Code to non-Anthropic models  through AI-VERDE.
+ 
+For more details on installation and usage, see the [Claude Code Router GitHub page](https://github.com/musistudio/claude-code-router).
 
 ## Prerequisites
-1. Obtain your VERDE API Key. Instructions can be found here, https://aiverde-docs.cyverse.ai/api/api-token/
-2. Note the model(s) you want to configure for Claude Code. Instructions can be found here, https://aiverde-docs.cyverse.ai/api/api-key-models/.
-3. Install Claude Code. Instructions can be found here, https://www.anthropic.com/claude-code/
-4. Install Claude Code Router. Instructions can be found here, https://github.com/musistudio/claude-code-router
-5. The remaining instructions assume you have an open terminal on system with Claude Code and bash installed.
+
+1. **AI-VERDE API Key**  
+   - Obtain your key by following the [AI-VERDE API Token Guide](https://aiverde-docs.cyverse.ai/api/api-token/).  
+
+2. **Model Information**  
+   - Identify the model(s) you plan to configure by reviewing the [AI-VERDE Model Documentation](https://aiverde-docs.cyverse.ai/api/api-key-models/).  
+
+3. **Claude Code Installed**  
+   - Follow the [Claude Code Installation Instructions](https://www.anthropic.com/claude-code/).  
+
+4. **Claude Code Router Installed**  
+   - Install the router by following the [Claude Code Router Setup Guide](https://github.com/musistudio/claude-code-router).  
+
+5. **Terminal Access**  
+   - Ensure you are using a terminal with Claude Code and bash available.
 
 ## 1. Starting Claude Code Router
 This step should only be needed the first time you use Claude Code Router.
-
 In a terminal, enter the command `ccr start`
 ```
 $ ccr start
 ```
 
 ## 2. Configuring Claude Code Router
-After running `ccr code`, you will be prompted to enter the minimum configuration to start Claude Code Router. Use the following table for guidance on the values:
+After starting the router, run:
+```
+ccr code
+```
+You will be prompted to enter configuration details.
+Use the table below as a reference for what to enter in each field:
 
 | Field | Value or Instructions | Notes |
 | ------| --------------------- | ----- |
-| Provider Name | `ai-verde` | any string works |
-| Provider API KEY | enter your AI-VERDE API key | |
-| Provider URL | `https://llm-api.cyverse.ai/v1/chat/completions` | |
+| Provider Name | `ai-verde` | any name works |
+| Provider API KEY | enter your AI-VERDE API key | copy from your account | 
+| Provider URL | `https://llm-api.cyverse.ai/v1/chat/completions` |default AI-VERDE API endpoint.|
 | MODEL Name | `<verde model name>` | replace `<verde model name>` with the model you'd like to use |
 
-After entering the MODEL name, you should see text similar to the following:
+After entering your model information, you should see output similar to:
 ```
 Loaded JSON config from: /root/.claude-code-router/config.json
 register transformer: Anthropic (endpoint: /v1/messages)
@@ -39,7 +55,7 @@ providerConfig:  ai-verde undefined
 ai-verde provider registered
 🚀 LLMs API server listening on http://127.0.0.1:3456
 ```
-Press `ctrl-c` so that you can run Claude Code with Claude Code Router.
+Once you see the message confirming registration, press `Ctrl + C` to stop the process before running Claude Code with Claude Code Router.
 
 ## 3. Running Claude Code Router
 Running Claude Code with Claude Code Router with the following command:
@@ -48,7 +64,11 @@ Running Claude Code with Claude Code Router with the following command:
 ccr code
 ```
 
-If you are successful entering Claude Code, congratulations! To use Claude Code with the same settings, you will need to run `ccr code` every time.
+If successful, you’ll enter Claude Code with your AI-VERDE configuration active. To use the same setup again, simply run `ccr code` each time you start a new session.
 
 ## Updating Claude Code Router configuration
-At some point, you may want to add other models or add or update configuration options. To do so, you can edit the configuration file found in `~/.claude-code-router/config.json`
+You can update your configuration at any time — for example, to add new models or change API settings. To edit your setup manually, open the configuration file located at: 
+```bash
+~/.claude-code-router/config.json`
+```
+Make your desired changes, save, and restart Claude Code Router to apply the updates.

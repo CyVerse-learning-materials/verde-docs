@@ -1,37 +1,58 @@
 # Getting a List of Models
 
-There are three ways to obtain a list models:
+This page explains how to find which AI models are available to you in **AI-VERDE**.  
+You can view your models directly in the application or through a simple command-line request using your API Key.
 
-1. Go to [this page](../models-current.md) to view the list of CyVerse models. This list does not include models from external inference services e.g., Jetstream2.
-2. Viewing your models in the Course Details
-3. Using your API Key to view your models
+## Ways to View Available Models
 
-## Viewing your models in the Course Details
+1. **From the Models Page** – Visit [this page](../models-current.md) to see the list of CyVerse models.  
+   > *Note:* This list only includes CyVerse-hosted models. External models (e.g., Jetstream2) are not shown.
 
-Your available models will be visible in the AI-VERDE application. These are the steps:
+2. **From Your Course Details** – View your available models directly in your AI-VERDE course.
 
-1. Go to https://chat.cyverse.ai
-2. After successfully logging in, click on the Details button of your course
-3. Click on the "API Key" tab
-4. The "Available Models" section will list all the models your course has access to
+3. **Using Your API Key** – Retrieve a detailed list of models through the command line.
 
-## Using your API Key to view your models
 
-After obtaining your API Key from your course/team, you can obtain a detailed list of available models using curl:
+## Viewing Models in the Course Details
 
-```
-curl -s -L "https://llm-api.cyverse.ai/v1/models" -H "Authorization: Bearer $OPENAI_API_KEY" -H 'Content-Type: application/json'
-```
+1. Go to [https://chat.cyverse.ai](https://chat.cyverse.ai)  
+2. Log in with your CyVerse credentials  
+3. Click "Details" on your course  
+4. Select the "API Key" tab  
+5. The "Available Models" section will display all models your course can access  
 
-Alternatively, you can use `jq` or python's json module to view the output in a more human readable format.
 
-Option 1: If you have `jq` installed:
-```
-curl -s -L "https://llm-api.cyverse.ai/v1/models" -H "Authorization: Bearer $OPENAI_API_KEY" -H 'Content-Type: application/json'|jq
-```
+## Viewing Models Using Your API Key
 
-Option 2: If you have python's json module installed:
-```
-curl -s -L "https://llm-api.cyverse.ai/v1/models" -H "Authorization: Bearer $OPENAI_API_KEY" |python -m json.tool
+After obtaining your "API Key" from your course or team, you can run the following command in your terminal to request a list of all models available to you.  
+This command uses `curl` to securely connect to the CyVerse API and return your model list in JSON format:
+
+```bash
+curl -s -L "https://llm-api.cyverse.ai/v1/models" \
+-H "Authorization: Bearer $OPENAI_API_KEY" \
+-H 'Content-Type: application/json'
 ```
 
+
+The response from the API is returned in JSON format, which can appear as a single long block of text.  To make it easier to read, you can format the output using tools like `jq` or Python’s built-in `json` module.
+
+
+**Option 1: Using `jq`**
+
+If you have the `jq` command-line tool installed, it will organize the JSON output into a clean, readable structure:
+
+```bash
+curl -s -L "https://llm-api.cyverse.ai/v1/models" \
+-H "Authorization: Bearer $OPENAI_API_KEY" \
+-H 'Content-Type: application/json' | jq
+```
+
+**Option 2: Using Python’s Built-in JSON Module**
+
+If you have Python installed, you can use its built-in JSON parser to format the output neatly:
+
+```bash
+curl -s -L "https://llm-api.cyverse.ai/v1/models" \
+-H "Authorization: Bearer $OPENAI_API_KEY" \
+| python -m json.tool
+```

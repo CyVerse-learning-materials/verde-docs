@@ -65,8 +65,8 @@ theme:
 
 # Page tree
 nav:
+  - Welcome: index.md
   - AI-VERDE Chat:
-      - Welcome: index.md
       - Getting Started: getting-started.md
       - Current CyVerse Models: models-current.md
       - Chat History: chat-history.md

@@ -1,20 +1,32 @@
 # Using your AI-VERDE API key to integrate with LangChain
 
-## 1. Install LangChain python libraries
-```bash 
-pip install langchain_community 
+## 1. Install LangChain Python Libraries
+
+To begin integrating AI-VERDE with LangChain, install the required Python package:
+
+```bash
+pip install langchain_community
 ```
 
 ## 2. Obtain variables to integrate AI-VERDE with LangChain
 
-Obtaining your AI-VERDE API key is outlined [here](/api/api-token/).
+You will need your AI-VERDE API Key to connect LangChain to the CyVerse API.
 
+**AI-VERDE API Key and API URL**  
+    - Obtain your credentials by following the [AI-VERDE API Token Guide](api-token.md).  
 
-You can obtain a list of the models you have access to with the following command; denoted by "id":
+Once you have your key, you can view the models you have access to (identified by their `id`) with the following command:
 ```bash
-curl -s -L "https://llm-api.cyverse.ai/v1/models" -H "Authorization: Bearer [AI-VERDE API KEY]" -H 'Content-Type: application/json'|jq 
+curl -s -L "https://llm-api.cyverse.ai/v1/models" \
+-H "Authorization: Bearer [AI-VERDE API KEY]" \
+-H 'Content-Type: application/json' | jq
 ```
 ## 3. Create python scripts
+You can now connect AI-VERDE to LangChain using the following Python example.
+Before running the script, make sure to:
+- Replace `[MODEL NAME]` with one of your available model IDs.
+- Replace `[AI-VERDE API KEY]` with your personal API key
+
 ```python
 from langchain_community.chat_models import ChatLiteLLM
 
@@ -27,7 +39,7 @@ print (llm.invoke("Hello, world!"))
 ```
 
 
-Alternatively, you can include the API key as an environment variable or secret to avoid storing it in plain text:
+To keep your API key secure, you can store it as an `environment variable` instead of typing it directly into your script. This ensures your credentials remain private if you share or upload your code.
 
 ```python
 import getpass

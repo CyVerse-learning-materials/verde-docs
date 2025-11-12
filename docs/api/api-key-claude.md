@@ -1,17 +1,19 @@
 # Claude Code (using Anthropic Models)
 
-You can follow these instructions to use your VERDE API Key after installing Claude Code. More information on using Claude Code can be found here, https://docs.anthropic.com/en/docs/intro.
+This guide explains how to connect Claude Code with your AI-VERDE API Key to access Anthropic models through CyVerse. 
+
+Follow the steps below after installing Claude Code to configure your connection. For more details on Claude Code features and usage, visit the [Anthropic documentation](https://docs.anthropic.com/en/docs/intro).
 
 !!! Note
 
-    These instructions assume you are using a space that is connected to Anthropic models. If you need access to Claude Code using a non-Anthropic model, then use the instructions for Claude Code Router.
+    Use this setup if your workspace supports **Anthropic LLMs** (like Claude 3 Sonnet or Opus). If your workspace uses **non-Anthropic models** (such as OpenAI, Gemini, or other providers), follow the [Claude Code Router setup](claude-code-router.md).  
 
 ## Prerequisites
 
-1. Your VERDE course or team must be configured to use Anthropic models (see instructor or team lead)
-2. Obtain your VERDE API Key. [Instructions can be found here](api-token.md)
-3. Install Claude Code. Instructions can be found here, https://www.anthropic.com/claude-code/
-4. The remaining instructions assume you have an open terminal on system with Claude Code and bash installed.
+1. Your VERDE course or team must be configured to use Anthropic models (see instructor or team lead) 
+2. Obtain your VERDE API Key follow the [AI-VERDE API Token Guide](api-token.md)
+3. Install Claude Code. Instructions can be found here, [Anthropic’s website](https://www.anthropic.com/claude-code/).
+4. A terminal (bash) open on a system where Claude Code is installed.
 
 ## 1. Setting up the necessary environment variables
 
@@ -23,11 +25,12 @@ export ANTHROPIC_BASE_URL="https://llm-api.cyverse.ai"
 export ANTHROPIC_API_KEY="insert-VERDE-API-Key-here"
 export ANTHROPIC_MODEL="anthropic/claude-sonnet-4"
 ```
-Note, the `ANTHROPIC_MODEL` can be set to any available Anthropic model. Information about available models can be found here, https://docs.anthropic.com/en/docs/about-claude/models/overview
 
-## 2. Start Claude Code
+Note, the `ANTHROPIC_MODEL` can be set to any available Anthropic model. Information about available models can be found here, [Anthropic documentation](https://docs.anthropic.com/en/docs/about-claude/models/overview).
 
-You can then run Claude Code.
+## 2. Launch Claude Code
+
+After setting your environment variables, start Claude Code by entering:
 ```
 claude
 ```

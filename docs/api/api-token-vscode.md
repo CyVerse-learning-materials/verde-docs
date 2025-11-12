@@ -9,13 +9,13 @@
 Within the extension marketplace, a simple search for OpenAI yields the desired extension.
 ![extension](../assets/vscode_extension_openai.png)
 
----
+
 ### 2. Configure the extension
 
 Once installed, a red bar with a "failed authentication" error will appear:
 ![redBar](../assets/vscode_openai_redbar.png)
 
----
+
 Selecting this red bar will bring out a new menu. In case you need to access this menu again, pressing the bar again will bring it up.
 
 In the new menu, select "custom" among the dropdown list
