@@ -5,7 +5,7 @@ You can follow these instructions to use your AI-VERDE API Key after Aider, self
 1. **AI-VERDE API Key**  
    - Obtain your key by following the [API Token guide](https://aiverde-docs.cyverse.ai/api/api-token/).  
 2. **Model Information**  
-   - Identify the model(s) you plan to use by reviewing the [Model Access guide](https://aiverde-docs.cyverse.ai/api/api-key-models/).  
+   - Identify the model(s) you plan to use by reviewing the [AI-VERDE Model Documentation](https://aiverde-docs.cyverse.ai/api/api-key-models/).  
 3. **Install Aider**  
    - Follow the official [Aider installation instructions](https://aider.chat/#getting-started/).  
 4. **Terminal Access**  

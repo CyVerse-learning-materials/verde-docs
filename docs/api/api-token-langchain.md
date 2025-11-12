@@ -10,7 +10,7 @@ pip install langchain_community
 
 ## 2. Obtain variables to integrate AI-VERDE with LangChain
 
-You will need your AI-VERDE APIKey to connect LangChain to the CyVerse API.
+You will need your AI-VERDE API Key to connect LangChain to the CyVerse API.
 
 **AI-VERDE API Key and API URL**  
     - Obtain your credentials by following the [AI-VERDE API Token Guide](api-token.md).  

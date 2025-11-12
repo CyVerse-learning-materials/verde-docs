@@ -9,7 +9,7 @@ For more details on installation and usage, see the [Claude Code Router GitHub p
    - Obtain your key by following the [AI-VERDE API Token Guide](https://aiverde-docs.cyverse.ai/api/api-token/).  
 
 2. **Model Information**  
-   - Identify the model(s) you plan to configure by reviewing the [AI-VERDE Model Access Documentation](https://aiverde-docs.cyverse.ai/api/api-key-models/).  
+   - Identify the model(s) you plan to configure by reviewing the [AI-VERDE Model Documentation](https://aiverde-docs.cyverse.ai/api/api-key-models/).  
 
 3. **Claude Code Installed**  
    - Follow the [Claude Code Installation Instructions](https://www.anthropic.com/claude-code/).  

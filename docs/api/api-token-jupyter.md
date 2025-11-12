@@ -7,7 +7,7 @@ This guide explains how to set up and use your AI-VERDE API Key inside Jupyter N
    - Obtain your key by following the [AI-VERDE API Token Guide](https://aiverde-docs.cyverse.ai/api/api-token/).
 
 2. **Model Information**  
-   - View available models and their names in the [AI-VERDE Model Access Documentation](../api/api-key-models.md).
+   - View available models and their names in the [AI-VERDE Model Documentation](../api/api-key-models.md).
 
 3. **Jupyter Installed**  
    - For intstalling Jupyter, visit [Jupyter Installation Website](https://jupyter.org/install).
@@ -53,12 +53,12 @@ print(json.dumps(response.json(), indent=2))
 ```
 
 ## Send a Test Prompt to AI-VERDE
-Use one of your models to send a message and enter your eplace your model ID
+Use one of your models to send a message and enter your model ID
 
 ```bash
 import os, requests, json
 
-API_URL = "https://llm-api.cyverse.ai/v1/chat/completions"
+API_URL = "https://llm-api.cyverse.ai/v1/"
 api_key = os.getenv("AIVERDE_API_KEY")
 
 headers = {
@@ -66,7 +66,7 @@ headers = {
     "Content-Type": "application/json"
 }
 data = {
-    "model": "litellm_proxy/dsi_students/gpt-4o-mini",  # Replace with your model ID
+    "model": "litellm_proxy/[MODEL NAME]",  # Replace with your model ID
     "messages": [
         {"role": "user", "content": "Hello AI-VERDE! What can you do?"}
     ]
