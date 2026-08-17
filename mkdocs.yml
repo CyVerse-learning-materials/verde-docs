@@ -86,7 +86,6 @@ nav:
           - Aider: api/aider.md
           - Claude Code (using Anthropic Models): api/api-key-claude.md
           - Claude Code (using non-Anthropic Models): api/api-key-claude-non-anthropic.md
-          - Claude Code (using AWS Bedrock Models): api/aws_bedrock_claude_code.md
           - Codex: api/api-key-codex.md
           - OpenCode: api/api-key-opencode.md
       - Using IDEs:
