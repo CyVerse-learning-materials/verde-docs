@@ -78,7 +78,7 @@ nav:
       - Using Your API Key for AWS Bedrock Models:
           - What is AWS Bedrock: api/aws_bedrock.md
           - Using Claude Code: api/aws_bedrock_claude_code.md
-          - Using Anthropic Python SDK: api/aws_bedrcok_anthropic_sdk_py.md
+          - Using Anthropic Python SDK: api/aws_bedrock_anthropic_sdk_py.md
       - Using Your API Key in Code:
           - LangChain: api/api-token-langchain.md
           - LlamaIndex: api/api-token-llamaindex.md
