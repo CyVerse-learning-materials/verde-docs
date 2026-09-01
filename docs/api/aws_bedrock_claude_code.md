@@ -37,9 +37,7 @@ export ANTHROPIC_DEFAULT_HAIKU_MODEL="my-team-claude-haiku-4-5"
 
 !!! Note
 
-    To obtain the AI-VERDE Bedrock Base URL, simply substitute `/v1` with `/bedrock`.
-
-To obtain the AI-VERDE Bedrock Base URL, simply substitute `/v1` with `/bedrock`.
+    To obtain the AI-VERDE Bedrock Base URL, simply substitute `/v1` with `/bedrock`, e.g. https://llm-api.cyverse.ai/v1 to https://llm-api.cyverse.ai/bedrock.
 
 To avoid re-entering this each session, add the line to your shell profile (e.g. `~/.bashrc` or `~/.zshrc`). Then, you can source your shell profile.
 
