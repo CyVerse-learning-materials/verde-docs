@@ -7,7 +7,7 @@ pip install langchain_community
 
 ## 2. Obtain variables to integrate AI-VERDE with LangChain
 
-Obtaining your AI-VERDE API key is outlined [here](/api/api-token/).
+See [Obtaining your AI-VERDE API Key](api-token.md) for instructions.
 
 
 You can obtain a list of the models you have access to with the following command; denoted by "id":

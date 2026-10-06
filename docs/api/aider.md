@@ -2,8 +2,8 @@
 You can follow these instructions to use your AI-VERDE API Key after Aider, self-described "AI pair programming in your terminal". More information on installing and using Aider can be found here, https://aider.chat.
 
 ## Prerequisites
-1. Obtain your AI-VERDE API Key. Instructions can be found here, https://aiverde-docs.cyverse.ai/api/api-token/.
-2. Note the model(s) you want to configure for Claude Code. Instructions can be found here, https://aiverde-docs.cyverse.ai/api/api-key-models/.
+1. Obtain your AI-VERDE API Key. See [Obtaining your AI-VERDE API Key](api-token.md).
+2. Note the model(s) you want to configure for Claude Code. See [Getting a List of Models](api-key-models.md).
 3. Install Aider. Instructions can be found here, https://aider.chat/#getting-started.
 4. The remaining instructions assume you have an open terminal on a Linux system with Aider.
 
