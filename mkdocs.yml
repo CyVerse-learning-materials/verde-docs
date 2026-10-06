@@ -69,7 +69,6 @@ nav:
       - Welcome: index.md
       - Getting Started: getting-started.md
       - Current CyVerse Models: models-current.md
-      - Chat History: chat-history.md
   - AI-VERDE API:
       - Getting Started:
           - What is the AI-VERDE API: api/index.md
@@ -92,11 +91,8 @@ nav:
           - OpenCode: api/api-key-opencode.md
       - Using IDEs:
           - VSCode: api/api-token-vscode.md
-          - Jupyter: api/api-token-jupyter.md
       - Using Desktop Clients:
           - ChatboxAI.app: api/chatboxai.md
-  - FAQ:
-      - FAQ: faq.md
   - For Instructors (and staff):
       - Getting Started: instructors/getting-started.md
     # - Creating a Course: instructors/creating-a-course.md

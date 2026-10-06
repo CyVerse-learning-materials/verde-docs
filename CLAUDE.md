@@ -42,9 +42,8 @@ mkdocs gh-deploy
 ## Key Documentation Sections
 
 - **AI-VERDE Chat**: User guides for the chat interface
-- **AI-VERDE API**: API documentation and integration examples for various platforms (LangChain, LlamaIndex, Jupyter, VSCode, etc.)
+- **AI-VERDE API**: API documentation and integration examples for LangChain, LlamaIndex, and VSCode
 - **For Instructors**: Course creation and management guides
-- **FAQ**: Common questions and troubleshooting
 
 ## Content Guidelines
 

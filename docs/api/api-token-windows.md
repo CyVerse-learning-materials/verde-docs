@@ -1,1 +1,0 @@
-# Examples of using your AI-VERDE API Token in Windows Desktop
