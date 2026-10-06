@@ -22,5 +22,5 @@ Before using the API you will need to:
 
 All AI-VERDE API endpoints use the same base URL and bearer-token authentication pattern as OpenAI. When configuring a client, set:
 
-- **Base URL**: `https://api.cyverse.ai/` (or the URL shown in your course details)
+- **Base URL**: `https://llm-api.cyverse.ai/` (or the URL shown in your course details)
 - **API Key**: the key you copied from the AI-VERDE dashboard
