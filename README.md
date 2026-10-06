@@ -20,13 +20,16 @@ This documentation repository serves both end users and API developers with comp
 
 ## Contributing
 
-This documentation is built with MkDocs and the Material theme. To contribute:
+This documentation is built with Zensical. To contribute:
 
 1. Install dependencies: `pip install -r requirements.txt`
-2. Run locally: `mkdocs serve`
+2. Run locally: `zensical serve`
 3. Edit Markdown files in the `docs/` directory
-4. Add new pages to the navigation in `mkdocs.yml`
+4. Add new pages to the navigation in `zensical.toml`
 5. Place images in `docs/assets/`
+6. Build the site: `zensical build --clean --strict`
+
+The GitHub Actions workflow publishes the generated site to the `gh-pages` branch when changes are pushed to `main`.
 
 ## Target Audience
 

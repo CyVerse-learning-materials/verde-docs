@@ -4,17 +4,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is the documentation repository for AI-VERDE (AI Virtual Explorer for Research, Discovery, and Education), an open source platform that facilitates access to commercial and on-premise LLMs with budget and access controls. The repository contains MkDocs-based documentation for both the AI-VERDE chat interface and API.
+This is the documentation repository for AI-VERDE (AI Virtual Explorer for Research, Discovery, and Education), an open source platform that facilitates access to commercial and on-premise LLMs with budget and access controls. The repository contains Zensical-based documentation for both the AI-VERDE chat interface and API.
 
 ## Architecture
 
-- **Documentation Framework**: MkDocs with Material theme
+- **Documentation Framework**: Zensical with the classic theme
 - **Content Structure**: 
   - `docs/` - Main documentation content
   - `docs/api/` - API documentation and integration guides
   - `docs/instructors/` - Instructor-specific documentation
   - `docs/assets/` - Images and static assets
-- **Configuration**: `mkdocs.yml` - Site configuration and navigation
+- **Configuration**: `zensical.toml` - Site configuration and navigation
 - **Styling**: `docs/stylesheets/extra.css` - Custom CSS
 
 ## Development Commands
@@ -25,19 +25,18 @@ This is the documentation repository for AI-VERDE (AI Virtual Explorer for Resea
 pip install -r requirements.txt
 
 # Serve documentation locally with live reload
-mkdocs serve
+zensical serve
 
 # Build static site
-mkdocs build
-
-# Deploy to GitHub Pages (if configured)
-mkdocs gh-deploy
+zensical build --clean --strict
 ```
+
+The GitHub Actions workflow in `.github/workflows/ghpages.yml` deploys the generated `site/` directory to the `gh-pages` branch on pushes to `main`.
 
 ### Content Management
 - Documentation is written in Markdown
 - Images should be placed in `docs/assets/`
-- New pages must be added to the `nav` section in `mkdocs.yml`
+- New pages must be added to the `nav` section in `zensical.toml`
 
 ## Key Documentation Sections
 
