@@ -19,28 +19,28 @@
         <loc>https://aiverde-docs.cyverse.ai/api/api-key-codex/</loc>
       </url>
       <url>
+        <loc>https://aiverde-docs.cyverse.ai/api/api-key-langchain/</loc>
+      </url>
+      <url>
+        <loc>https://aiverde-docs.cyverse.ai/api/api-key-llamaindex/</loc>
+      </url>
+      <url>
+        <loc>https://aiverde-docs.cyverse.ai/api/api-key-macos/</loc>
+      </url>
+      <url>
+        <loc>https://aiverde-docs.cyverse.ai/api/api-key-macterminal/</loc>
+      </url>
+      <url>
         <loc>https://aiverde-docs.cyverse.ai/api/api-key-models/</loc>
       </url>
       <url>
         <loc>https://aiverde-docs.cyverse.ai/api/api-key-opencode/</loc>
       </url>
       <url>
-        <loc>https://aiverde-docs.cyverse.ai/api/api-token-langchain/</loc>
+        <loc>https://aiverde-docs.cyverse.ai/api/api-key-vscode/</loc>
       </url>
       <url>
-        <loc>https://aiverde-docs.cyverse.ai/api/api-token-llamaindex/</loc>
-      </url>
-      <url>
-        <loc>https://aiverde-docs.cyverse.ai/api/api-token-macos/</loc>
-      </url>
-      <url>
-        <loc>https://aiverde-docs.cyverse.ai/api/api-token-macterminal/</loc>
-      </url>
-      <url>
-        <loc>https://aiverde-docs.cyverse.ai/api/api-token-vscode/</loc>
-      </url>
-      <url>
-        <loc>https://aiverde-docs.cyverse.ai/api/api-token/</loc>
+        <loc>https://aiverde-docs.cyverse.ai/api/api-key/</loc>
       </url>
       <url>
         <loc>https://aiverde-docs.cyverse.ai/api/aws_bedrock/</loc>

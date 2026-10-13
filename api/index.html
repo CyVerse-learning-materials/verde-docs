@@ -18,7 +18,7 @@
         <link rel="prev" href="../models-current/">
       
       
-        <link rel="next" href="./api-token/">
+        <link rel="next" href="./api-key/">
       
       
         
@@ -55,8 +55,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7CRegular:400,400i,700,700i&amp;display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Regular"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -78,7 +78,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="green" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="aiverde" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -132,7 +132,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="green" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="aiverde" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -637,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./api-token/" class="md-nav__link">
+      <a href="./api-key/" class="md-nav__link">
         
   
   
@@ -701,8 +701,6 @@
   
     
     
-      
-        
       
         
       
@@ -813,33 +811,6 @@
   
   
     <li class="md-nav__item">
-      <a href="./aws_bedrock_anthropic_sdk_py/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Using Anthropic Python SDK
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="./aws_bedrock_vscode_claude_code/" class="md-nav__link">
         
   
@@ -877,6 +848,8 @@
   
     
     
+      
+        
       
         
       
@@ -931,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./api-token-langchain/" class="md-nav__link">
+      <a href="./api-key-langchain/" class="md-nav__link">
         
   
   
@@ -958,7 +931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./api-token-llamaindex/" class="md-nav__link">
+      <a href="./api-key-llamaindex/" class="md-nav__link">
         
   
   
@@ -966,6 +939,33 @@
     
   
   LlamaIndex
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./aws_bedrock_anthropic_sdk_py/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Anthropic Python SDK
 
     
   </span>
@@ -1281,7 +1281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./api-token-vscode/" class="md-nav__link">
+      <a href="./api-key-vscode/" class="md-nav__link">
         
   
   
@@ -1579,11 +1579,11 @@
 
 
 <h1 id="introduction-to-ai-verde-api">Introduction to AI-VERDE API<a class="headerlink" href="#introduction-to-ai-verde-api" title="Permanent link">&para;</a></h1>
-<p>AI-VERDE exposes an OpenAI-compatible API, so any tool or library that supports OpenAI can connect to it using your AI-VERDE API key. This section explains how to get your key and use it across a range of environments.</p>
+<p>AI-VERDE exposes an OpenAI-compatible API, so any tool or library that supports OpenAI can connect to it using your AI-VERDE API key. AI-VERDE also accepts Anthropic-style requests (used by Claude Code and the Anthropic SDK) and, for Claude Code only, AWS Bedrock-style requests for Claude models hosted on AWS Bedrock. This section explains how to get your key and use it across a range of environments.</p>
 <h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
 <p>Before using the API you will need to:</p>
 <ol>
-<li><strong>Obtain your API key</strong> — Sign in at <a href="https://chat.cyverse.ai">chat.cyverse.ai</a>, open your course or team details, and copy the key from the <strong>API Key</strong> tab. See <a href="api-token/">Obtaining your AI-VERDE API Key</a> for step-by-step instructions.</li>
+<li><strong>Obtain your API key</strong> — Sign in at <a href="https://chat.cyverse.ai">chat.cyverse.ai</a>, open your course or team details, and copy the key from the <strong>API Key</strong> tab. See <a href="api-key/">Obtaining your AI-VERDE API Key</a> for step-by-step instructions.</li>
 <li><strong>Know which models are available</strong> — Your available models are listed on the same API Key page. You can also retrieve them programmatically; see <a href="api-key-models/">Getting a List of Models</a>.</li>
 </ol>
 <h2 id="whats-in-this-section">What's in This Section<a class="headerlink" href="#whats-in-this-section" title="Permanent link">&para;</a></h2>
@@ -1596,15 +1596,19 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="api-token-langchain/">Using Your API Key in Code</a></td>
-<td>Python integration with LangChain and LlamaIndex</td>
+<td><a href="aws_bedrock/">Using Your API Key for AWS Bedrock Models</a></td>
+<td>Claude models on AWS Bedrock with Claude Code and the Claude Code for VS Code extension</td>
+</tr>
+<tr>
+<td><a href="api-key-langchain/">Using Your API Key in Code</a></td>
+<td>Python integration with LangChain, LlamaIndex, and the Anthropic Python SDK</td>
 </tr>
 <tr>
 <td><a href="claude-code-router/">Using CLI Coding Assistants</a></td>
-<td>Terminal-based AI coding tools: Claude Code Router, Aider, and Claude Code</td>
+<td>Terminal-based AI coding tools: Claude Code Router, Aider, Claude Code, Codex, and OpenCode</td>
 </tr>
 <tr>
-<td><a href="api-token-vscode/">Using IDEs</a></td>
+<td><a href="api-key-vscode/">Using IDEs</a></td>
 <td>Editor integration for VSCode</td>
 </tr>
 <tr>
@@ -1614,11 +1618,39 @@
 </tbody>
 </table>
 <h2 id="base-url-and-authentication">Base URL and Authentication<a class="headerlink" href="#base-url-and-authentication" title="Permanent link">&para;</a></h2>
-<p>All AI-VERDE API endpoints use the same base URL and bearer-token authentication pattern as OpenAI. When configuring a client, set:</p>
-<ul>
-<li><strong>Base URL</strong>: <code>https://llm-api.cyverse.ai/</code> (or the URL shown in your course details)</li>
-<li><strong>API Key</strong>: the key you copied from the AI-VERDE dashboard</li>
-</ul>
+<p>When configuring a client, you need your <strong>API key</strong> (copied from the AI-VERDE dashboard) and a <strong>base URL</strong>. The base URL depends on which style of API the client speaks:</p>
+<table>
+<thead>
+<tr>
+<th>API style</th>
+<th>Base URL</th>
+<th>Used by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenAI-compatible</td>
+<td><code>https://llm-api.cyverse.ai/v1</code></td>
+<td><a href="aider/">Aider</a>, <a href="api-key-codex/">Codex</a>, <a href="api-key-opencode/">OpenCode</a>, <a href="claude-code-router/">Claude Code Router</a>, <a href="chatboxai/">ChatboxAI</a>, <a href="api-key-vscode/">VSCode</a>, and most OpenAI clients</td>
+</tr>
+<tr>
+<td>Anthropic-style</td>
+<td><code>https://llm-api.cyverse.ai</code></td>
+<td><a href="api-key-claude/">Claude Code (Anthropic models)</a>, <a href="api-key-claude-non-anthropic/">Claude Code (non-Anthropic models)</a>, <a href="aws_bedrock_anthropic_sdk_py/">Anthropic Python SDK</a></td>
+</tr>
+<tr>
+<td>AWS Bedrock</td>
+<td><code>https://llm-api.cyverse.ai/bedrock</code></td>
+<td><a href="aws_bedrock_claude_code/">Claude Code on Bedrock</a>, <a href="aws_bedrock_vscode_claude_code/">Claude Code for VS Code on Bedrock</a></td>
+</tr>
+</tbody>
+</table>
+<p>If your course details show a different base URL ending in <code>/v1</code>, use it for OpenAI-compatible clients, remove <code>/v1</code> for Anthropic-style clients, and replace <code>/v1</code> with <code>/bedrock</code> for AWS Bedrock.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <a href="api-key-langchain/">LangChain</a> and <a href="api-key-llamaindex/">LlamaIndex</a> examples use LiteLLM's <code>litellm_proxy</code> provider, which takes the base URL without <code>/v1</code> (<code>https://llm-api.cyverse.ai</code>).</p>
+</div>
+<p>OpenAI-compatible clients send the API key as a bearer token (<code>Authorization: Bearer &lt;your-api-key&gt;</code>), and Anthropic-style clients may send it in an <code>x-api-key</code> header instead; AI-VERDE accepts either. Each guide shows which setting or environment variable holds the key for that tool.</p>
 
 
 
@@ -1684,7 +1716,9 @@
       
         
         
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.instant","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.indexes","navigation.top","toc.follow"],"redirect":null,"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+          
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.instant","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.indexes","navigation.top","toc.follow"],"redirect":"../redirect.json","search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../assets/javascripts/bundle.3c842f4c.min.js"></script>

@@ -55,8 +55,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7CRegular:400,400i,700,700i&amp;display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Regular"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -78,7 +78,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="green" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="aiverde" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -132,7 +132,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="green" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="aiverde" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -635,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-token/" class="md-nav__link">
+      <a href="../api-key/" class="md-nav__link">
         
   
   
@@ -699,8 +699,6 @@
   
     
     
-      
-        
       
         
       
@@ -811,33 +809,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws_bedrock_anthropic_sdk_py/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Using Anthropic Python SDK
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../aws_bedrock_vscode_claude_code/" class="md-nav__link">
         
   
@@ -875,6 +846,8 @@
   
     
     
+      
+        
       
         
       
@@ -929,7 +902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-token-langchain/" class="md-nav__link">
+      <a href="../api-key-langchain/" class="md-nav__link">
         
   
   
@@ -956,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-token-llamaindex/" class="md-nav__link">
+      <a href="../api-key-llamaindex/" class="md-nav__link">
         
   
   
@@ -964,6 +937,33 @@
     
   
   LlamaIndex
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws_bedrock_anthropic_sdk_py/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Anthropic Python SDK
 
     
   </span>
@@ -1365,7 +1365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-token-vscode/" class="md-nav__link">
+      <a href="../api-key-vscode/" class="md-nav__link">
         
   
   
@@ -1663,27 +1663,31 @@
 
 
 <h1 id="aider">Aider<a class="headerlink" href="#aider" title="Permanent link">&para;</a></h1>
-<p>You can follow these instructions to use your AI-VERDE API Key after Aider, self-described "AI pair programming in your terminal". More information on installing and using Aider can be found here, <a href="https://aider.chat">https://aider.chat</a>.</p>
+<p>You can follow these instructions to use your AI-VERDE API Key with Aider, self-described "AI pair programming in your terminal". More information on installing and using Aider can be found here, <a href="https://aider.chat">https://aider.chat</a>.</p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Obtain your AI-VERDE API Key. See <a href="../api-token/">Obtaining your AI-VERDE API Key</a>.</li>
-<li>Note the model(s) you want to configure for Claude Code. See <a href="../api-key-models/">Getting a List of Models</a>.</li>
+<li>Obtain your AI-VERDE API Key. See <a href="../api-key/">Obtaining your AI-VERDE API Key</a>.</li>
+<li>Note the model(s) you want to configure for Aider. See <a href="../api-key-models/">Getting a List of Models</a>.</li>
 <li>Install Aider. Instructions can be found here, <a href="https://aider.chat/#getting-started">https://aider.chat/#getting-started</a>.</li>
 <li>The remaining instructions assume you have an open terminal on a Linux system with Aider.</li>
 </ol>
 <h2 id="1-configuring-aider">1. Configuring Aider<a class="headerlink" href="#1-configuring-aider" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Create a <code>$HOME/.aider.conf.yml</code> file with the following contents
-<div class="highlight"><pre><span></span><code>openai-api-key: insert-your-aiverde-api-key
-openai-api-base: https://llm-api.cyverse.ai/v1
-model: openai/insert-default-model
-</code></pre></div></li>
-<li>Replace <code>insert-your-aiverde-api-key</code> with AI-VERDE API Key. </li>
-<li>Replace the text <code>insert-default-model</code> with the AI-VERDE model. For example, to use <code>phi4</code>, the model field would be set to <code>openai/phi4</code> or if you were using <code>nrp/phi4</code> model, the model field would be set to <code>openai/nrp/phi4</code>.</li>
+<li>
+<p>Create a <code>$HOME/.aider.conf.yml</code> file with the following contents:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">openai-api-key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">insert-your-aiverde-api-key</span>
+<span class="nt">openai-api-base</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://llm-api.cyverse.ai/v1</span>
+<span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openai/insert-default-model</span>
+</code></pre></div>
+</li>
+<li>
+<p>Replace <code>insert-your-aiverde-api-key</code> with your AI-VERDE API Key.</p>
+</li>
+<li>Replace the text <code>insert-default-model</code> with the AI-VERDE model. For example, to use <code>gemma-4-26b-it</code>, the model field would be set to <code>openai/gemma-4-26b-it</code>. If the model name already contains a provider prefix (e.g. <code>nrp/&lt;model&gt;</code>), keep it and add <code>openai/</code> in front (e.g. <code>openai/nrp/&lt;model&gt;</code>).</li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This is the minimal configuration needed to use Aider. If you want to set other configuration for any models, you add a <code>$HOME/.aider.model.metadata.json</code> file. Instructions on the configuration values that can be set in this file can be found here, <a href="https://aider.chat/docs/config/adv-model-settings.html">https://aider.chat/docs/config/adv-model-settings.html</a>. </p>
+<p>This is the minimal configuration needed to use Aider. If you want to set other configuration for any models, you can add a <code>$HOME/.aider.model.metadata.json</code> file. Instructions on the configuration values that can be set in this file can be found here, <a href="https://aider.chat/docs/config/adv-model-settings.html">https://aider.chat/docs/config/adv-model-settings.html</a>.</p>
 </div>
 <h2 id="2-running-aider">2. Running Aider<a class="headerlink" href="#2-running-aider" title="Permanent link">&para;</a></h2>
 <p>Run Aider with the following command:</p>
@@ -1691,9 +1695,9 @@ model: openai/insert-default-model
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You may get additional prompts if you're not in a git repo and if you have not configured your model further (see note above). You can also run aider with <code>aider --no-show-model-warnings</code> if you prefer to ignore model warnings</p>
+<p>You may get additional prompts if you're not in a git repo and if you have not configured your model further (see note above). You can also run aider with <code>aider --no-show-model-warnings</code> if you prefer to ignore model warnings.</p>
 </div>
-<p>If you are successful entering Aider, congratulations! </p>
+<p>If you are successful entering Aider, congratulations!</p>
 
 
 
@@ -1759,7 +1763,9 @@ model: openai/insert-default-model
       
         
         
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.instant","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.indexes","navigation.top","toc.follow"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+          
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.instant","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.indexes","navigation.top","toc.follow"],"redirect":"../../redirect.json","search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../../assets/javascripts/bundle.3c842f4c.min.js"></script>

@@ -18,7 +18,7 @@
         <link rel="prev" href="../aws_bedrock/">
       
       
-        <link rel="next" href="../aws_bedrock_anthropic_sdk_py/">
+        <link rel="next" href="../aws_bedrock_vscode_claude_code/">
       
       
         
@@ -55,8 +55,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7CRegular:400,400i,700,700i&amp;display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Regular"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -78,7 +78,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="green" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="aiverde" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -132,7 +132,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="green" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="aiverde" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -635,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-token/" class="md-nav__link">
+      <a href="../api-key/" class="md-nav__link">
         
   
   
@@ -701,8 +701,6 @@
   
     
     
-      
-        
       
         
       
@@ -860,13 +858,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-set-the-environment-variables" class="md-nav__link">
+  <a href="#1-configure-claude-code" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        1. Set the Environment Variables
+        1. Configure Claude Code
       </span>
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="1. Configure Claude Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-claudesettingsjson-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Option 1: <code>~/.claude/settings.json</code> (recommended)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-shell-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Option 2: Shell environment variables
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -881,37 +907,21 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#if-you-need-to-change-your-api-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        If you need to change your API Key
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../aws_bedrock_anthropic_sdk_py/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Using Anthropic Python SDK
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -966,6 +976,8 @@
       
         
       
+        
+      
     
     
     
@@ -1015,7 +1027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-token-langchain/" class="md-nav__link">
+      <a href="../api-key-langchain/" class="md-nav__link">
         
   
   
@@ -1042,7 +1054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-token-llamaindex/" class="md-nav__link">
+      <a href="../api-key-llamaindex/" class="md-nav__link">
         
   
   
@@ -1050,6 +1062,33 @@
     
   
   LlamaIndex
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws_bedrock_anthropic_sdk_py/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Anthropic Python SDK
 
     
   </span>
@@ -1365,7 +1404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-token-vscode/" class="md-nav__link">
+      <a href="../api-key-vscode/" class="md-nav__link">
         
   
   
@@ -1621,13 +1660,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-set-the-environment-variables" class="md-nav__link">
+  <a href="#1-configure-claude-code" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        1. Set the Environment Variables
+        1. Configure Claude Code
       </span>
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="1. Configure Claude Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-claudesettingsjson-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Option 1: <code>~/.claude/settings.json</code> (recommended)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2-shell-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Option 2: Shell environment variables
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1636,6 +1703,17 @@
     <span class="md-ellipsis">
       <span class="md-typeset">
         2. Launch Claude Code
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-you-need-to-change-your-api-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        If you need to change your API Key
       </span>
     </span>
   </a>
@@ -1664,15 +1742,48 @@
 
 <h1 id="using-claude-code-with-ai-verde">Using Claude Code with AI-VERDE<a class="headerlink" href="#using-claude-code-with-ai-verde" title="Permanent link">&para;</a></h1>
 <p>Claude Code is Anthropic's official CLI coding assistant. AI-VERDE can serve as the backend for Claude Code, routing requests through AI-VERDE's budget controls and guardrails to Anthropic Claude models hosted on AWS Bedrock.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Unlike the <a href="../api-key-claude/">non-Bedrock Claude Code setup</a>, which uses <code>ANTHROPIC_API_KEY</code>, the Bedrock setup must put your AI-VERDE API key in <code>ANTHROPIC_AUTH_TOKEN</code>. When talking to a Bedrock endpoint, Claude Code only sends <code>ANTHROPIC_AUTH_TOKEN</code>; an <code>ANTHROPIC_API_KEY</code> would be ignored.</p>
+</div>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Obtain your <strong>AI-VERDE API key</strong> and note the <strong>AI-VERDE base URL</strong>. The base url that will be used in the environment variables will be set with <code>/bedrock</code> rather than <code>/v1</code><a href="../api-token/">Instructions can be found here</a>.</li>
-<li>Note the <strong>Claude model ID</strong> for Opus, Sonnet, and Haiku. <a href="../api-key-models/">Instructions for listing available models can be found here</a>.</li>
-<li>Install <strong>Claude Code</strong>. Instructions can be found at <a href="https://www.anthropic.com/claude-code">https://www.anthropic.com/claude-code</a>.</li>
-<li>The remaining instructions assume you have an open terminal with Claude Code installed onlinux or mac terminal.</li>
+<li>Obtain your <strong>AI-VERDE API key</strong> and note the <strong>AI-VERDE base URL</strong>. The base URL used in the environment variables ends in <code>/bedrock</code> rather than <code>/v1</code>. <a href="../api-key/">Instructions can be found here</a>.</li>
+<li>Note the <strong>Claude model ID</strong> for Opus, Sonnet, and Haiku. <a href="../api-key-models/">Instructions for listing available models can be found here</a>. Model names in AI-VERDE are prefixed with an identifier for your course or team, separated by a dash or a slash (e.g. <code>my-team-claude-sonnet-4-6</code> or <code>my-team/claude-sonnet-4-6</code>).</li>
+<li>Install <strong>Claude Code</strong>. Instructions can be found at <a href="https://code.claude.com/docs/en/setup">https://code.claude.com/docs/en/setup</a>.</li>
+<li>The remaining instructions assume you have an open terminal with Claude Code installed on Linux or macOS.</li>
 </ol>
-<h2 id="1-set-the-environment-variables">1. Set the Environment Variables<a class="headerlink" href="#1-set-the-environment-variables" title="Permanent link">&para;</a></h2>
-<p>Export the following environment variables before launching claude code.</p>
+<h2 id="1-configure-claude-code">1. Configure Claude Code<a class="headerlink" href="#1-configure-claude-code" title="Permanent link">&para;</a></h2>
+<h3 id="option-1-claudesettingsjson-recommended">Option 1: <code>~/.claude/settings.json</code> (recommended)<a class="headerlink" href="#option-1-claudesettingsjson-recommended" title="Permanent link">&para;</a></h3>
+<p>Add the following <code>env</code> section to <code>~/.claude/settings.json</code> (create the file if it does not exist). Settings in this file apply every time you run Claude Code, in any terminal.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"env"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"ANTHROPIC_AUTH_TOKEN"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;your-ai-verde-api-key&gt;"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"ANTHROPIC_BEDROCK_BASE_URL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://llm-api.cyverse.ai/bedrock"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"CLAUDE_CODE_SKIP_BEDROCK_AUTH"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"CLAUDE_CODE_USE_BEDROCK"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"ANTHROPIC_DEFAULT_OPUS_MODEL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;model name for opus&gt;"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"ANTHROPIC_DEFAULT_SONNET_MODEL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;model name for sonnet&gt;"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"ANTHROPIC_DEFAULT_HAIKU_MODEL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;model name for haiku&gt;"</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"env"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"ANTHROPIC_AUTH_TOKEN"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sk-xxxxxxxxxxxxxxxxxxxxxx"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"ANTHROPIC_BEDROCK_BASE_URL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://llm-api.cyverse.ai/bedrock"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"CLAUDE_CODE_SKIP_BEDROCK_AUTH"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"CLAUDE_CODE_USE_BEDROCK"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"ANTHROPIC_DEFAULT_OPUS_MODEL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my-team-claude-opus-4-6"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"ANTHROPIC_DEFAULT_SONNET_MODEL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my-team-claude-sonnet-4-6"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"ANTHROPIC_DEFAULT_HAIKU_MODEL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my-team-claude-haiku-4-5"</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>If the file already has other settings, add the <code>env</code> section alongside them rather than replacing the file.</p>
+<h3 id="option-2-shell-environment-variables">Option 2: Shell environment variables<a class="headerlink" href="#option-2-shell-environment-variables" title="Permanent link">&para;</a></h3>
+<p>Alternatively, export the same variables in your terminal before launching Claude Code:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_AUTH_TOKEN</span><span class="o">=</span><span class="s2">"&lt;your-ai-verde-api-key&gt;"</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_BEDROCK_BASE_URL</span><span class="o">=</span>https://llm-api.cyverse.ai/bedrock
 <span class="nb">export</span><span class="w"> </span><span class="nv">CLAUDE_CODE_SKIP_BEDROCK_AUTH</span><span class="o">=</span><span class="m">1</span>
@@ -1681,24 +1792,18 @@
 <span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_DEFAULT_SONNET_MODEL</span><span class="o">=</span><span class="s2">"&lt;model name for sonnet&gt;"</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_DEFAULT_HAIKU_MODEL</span><span class="o">=</span><span class="s2">"&lt;model name for haiku&gt;"</span>
 </code></pre></div>
-<p>For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_AUTH_TOKEN</span><span class="o">=</span><span class="s2">"xyz"</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_BEDROCK_BASE_URL</span><span class="o">=</span>https://llm-api.cyverse.ai/bedrock
-<span class="nb">export</span><span class="w"> </span><span class="nv">CLAUDE_CODE_SKIP_BEDROCK_AUTH</span><span class="o">=</span><span class="m">1</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">CLAUDE_CODE_USE_BEDROCK</span><span class="o">=</span><span class="m">1</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_DEFAULT_OPUS_MODEL</span><span class="o">=</span><span class="s2">"my-team-claude-opus-4-6"</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_DEFAULT_SONNET_MODEL</span><span class="o">=</span><span class="s2">"my-team-claude-sonnet-4-6"</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_DEFAULT_HAIKU_MODEL</span><span class="o">=</span><span class="s2">"my-team-claude-haiku-4-5"</span>
-</code></pre></div>
+<p>Exported variables only last for the current terminal session. To avoid re-entering them each session, add the lines to your shell profile (e.g. <code>~/.bashrc</code> or <code>~/.zshrc</code>), then source your shell profile.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>To obtain the AI-VERDE Bedrock Base URL, simply substitute <code>/v1</code> with <code>/bedrock</code>, e.g. <a href="https://llm-api.cyverse.ai/v1">https://llm-api.cyverse.ai/v1</a> to <a href="https://llm-api.cyverse.ai/bedrock">https://llm-api.cyverse.ai/bedrock</a>.</p>
+<p>To obtain the AI-VERDE Bedrock Base URL, simply substitute <code>/v1</code> with <code>/bedrock</code>, e.g. <code>https://llm-api.cyverse.ai/v1</code> to <code>https://llm-api.cyverse.ai/bedrock</code>. If both <code>~/.claude/settings.json</code> and your shell set the same variable, the value in <code>~/.claude/settings.json</code> is used.</p>
 </div>
-<p>To avoid re-entering this each session, add the line to your shell profile (e.g. <code>~/.bashrc</code> or <code>~/.zshrc</code>). Then, you can source your shell profile.</p>
 <h2 id="2-launch-claude-code">2. Launch Claude Code<a class="headerlink" href="#2-launch-claude-code" title="Permanent link">&para;</a></h2>
 <p>Start Claude Code:</p>
 <div class="highlight"><pre><span></span><code>claude
 </code></pre></div>
+<p>You can run <code>/status</code> inside Claude Code to confirm it is using Amazon Bedrock with the AI-VERDE base URL.</p>
+<h2 id="if-you-need-to-change-your-api-key">If you need to change your API Key<a class="headerlink" href="#if-you-need-to-change-your-api-key" title="Permanent link">&para;</a></h2>
+<p>If for some reason you need to change your VERDE API Key, update <code>ANTHROPIC_AUTH_TOKEN</code> wherever you set it in step 1 (<code>~/.claude/settings.json</code> or your shell profile), then restart Claude Code.</p>
 
 
 
@@ -1764,7 +1869,9 @@
       
         
         
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.instant","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.indexes","navigation.top","toc.follow"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+          
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.instant","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.indexes","navigation.top","toc.follow"],"redirect":"../../redirect.json","search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../../assets/javascripts/bundle.3c842f4c.min.js"></script>

@@ -51,8 +51,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7CRegular:400,400i,700,700i&amp;display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Regular"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -74,7 +74,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="green" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="aiverde" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -128,7 +128,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="green" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="aiverde" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
@@ -622,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/api-token/" class="md-nav__link">
+      <a href="../../api/api-key/" class="md-nav__link">
         
   
   
@@ -686,8 +686,6 @@
   
     
     
-      
-        
       
         
       
@@ -798,33 +796,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/aws_bedrock_anthropic_sdk_py/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Using Anthropic Python SDK
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../api/aws_bedrock_vscode_claude_code/" class="md-nav__link">
         
   
@@ -862,6 +833,8 @@
   
     
     
+      
+        
       
         
       
@@ -916,7 +889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/api-token-langchain/" class="md-nav__link">
+      <a href="../../api/api-key-langchain/" class="md-nav__link">
         
   
   
@@ -943,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/api-token-llamaindex/" class="md-nav__link">
+      <a href="../../api/api-key-llamaindex/" class="md-nav__link">
         
   
   
@@ -951,6 +924,33 @@
     
   
   LlamaIndex
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/aws_bedrock_anthropic_sdk_py/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Anthropic Python SDK
 
     
   </span>
@@ -1266,7 +1266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/api-token-vscode/" class="md-nav__link">
+      <a href="../../api/api-key-vscode/" class="md-nav__link">
         
   
   
@@ -1580,7 +1580,7 @@
 <ul>
 <li><strong>Can’t find the API key after creating it</strong>  </li>
 <li>
-<p>OpenAI only shows the key once. If you lost it, return to the <a href="https://platform.openai.com/account/api-keys">API Keys page</a> and generate a new one.  </p>
+<p>OpenAI only shows the key once. If you lost it, return to the <a href="https://platform.openai.com/api-keys">API Keys page</a> and generate a new one.  </p>
 </li>
 <li>
 <p><strong>Stache entry not accessible to the AI-VERDE team</strong>  </p>
@@ -1594,54 +1594,55 @@
 </ul>
 <h2 id="creating-a-course-issues">Creating a Course Issues<a class="headerlink" href="#creating-a-course-issues" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Form submitted but no confirmation</strong>  </li>
+<li><strong>Course request emailed but no response</strong>  </li>
 <li>Wait up to 48 hours for processing.  </li>
 <li>
 <p>Check your spam/junk folder for CyVerse messages.  </p>
 </li>
 <li>
-<p><strong>CSV upload rejected</strong>  </p>
+<p><strong>Some students missing from the roster</strong>  </p>
 </li>
-<li>Ensure file format is <code>.CSV</code> (not <code>.XLSX</code>).  </li>
+<li>Add them yourself in the <strong>Members</strong> tab of your course, or  </li>
 <li>
-<p>Confirm there are no blank rows or invalid characters.  </p>
-</li>
-<li>
-<p><strong>Some students missing from initial roster</strong>  </p>
-</li>
-<li>Double-check the CSV formatting.  </li>
-<li>
-<p>Resubmit the corrected file to the support team.</p>
+<p>Email the missing members to <strong><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#105;&#45;&#118;&#101;&#114;&#100;&#101;&#45;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#46;&#111;&#114;&#103;">&#97;&#105;&#45;&#118;&#101;&#114;&#100;&#101;&#45;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#46;&#111;&#114;&#103;</a></strong>.</p>
 </li>
 <li>
 <p><strong>Course details are incorrect (name, description, or term)</strong>  </p>
 </li>
-<li>Contact <strong><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#105;&#45;&#118;&#101;&#114;&#100;&#101;&#45;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#46;&#111;&#114;&#103;">&#97;&#105;&#45;&#118;&#101;&#114;&#100;&#101;&#45;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#46;&#111;&#114;&#103;</a></strong> with the corrections.  </li>
+<li>Owners and instructors can edit the name, description, and dates in the <strong>Overview</strong> tab.  </li>
+<li>Otherwise, contact <strong><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#105;&#45;&#118;&#101;&#114;&#100;&#101;&#45;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#46;&#111;&#114;&#103;">&#97;&#105;&#45;&#118;&#101;&#114;&#100;&#101;&#45;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#46;&#111;&#114;&#103;</a></strong> with the corrections.  </li>
 </ul>
 <h2 id="managing-a-course-issues">Managing a Course Issues<a class="headerlink" href="#managing-a-course-issues" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Course doesn’t show up?</strong> </li>
-<li>Confirm with support that your course was created and check start date.  </li>
-<li><strong>A student can’t log in?</strong> </li>
+<li><strong>Course doesn’t show up?</strong></li>
+<li>Confirm with support that your course was created.  </li>
 <li>
-<p>Verify they are listed under Members. If not, add them.  </p>
+<p>Check that the course status is Active and that today is between its start and end dates.  </p>
+</li>
+<li>
+<p><strong>A student can’t see the course?</strong></p>
+</li>
+<li>Verify they are listed under Members. If not, add them.  </li>
+<li>
+<p>Check the course status and dates, as above.  </p>
 </li>
 <li>
 <p><strong>Budget seems off or not updating</strong>  </p>
 </li>
 <li>Budgets are managed by CyVerse.  </li>
+<li>By default, budgets are monthly and reset on the 1<sup>st</sup> of each month, so usage drops back to zero at that point. Some courses use a different reset schedule.  </li>
 <li>
-<p>Instructors can view usage but not set budgets — email support for adjustments.  </p>
+<p>Instructors can view usage but not set budgets — email <strong><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#105;&#45;&#118;&#101;&#114;&#100;&#101;&#45;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#46;&#111;&#114;&#103;">&#97;&#105;&#45;&#118;&#101;&#114;&#100;&#101;&#45;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#46;&#111;&#114;&#103;</a></strong> for adjustments.  </p>
 </li>
 <li>
 <p><strong>Students can’t access prompts</strong>  </p>
 </li>
-<li>Ensure the prompt has been published/shared in the Prompts tab.  </li>
+<li>Prompts are shared with all course members automatically. Check that the prompt still exists in the Prompts tab and was not deleted.  </li>
 <li>
-<p>Double-check course activity status is set to Active.  </p>
+<p>Check that the student is listed under Members and can see the course (see above).  </p>
 </li>
 <li>
-<p><strong>Error generating API keys or exporting</strong>  </p>
+<p><strong>Error generating API keys</strong>  </p>
 </li>
 <li>Retry after refreshing your dashboard session.    </li>
 </ul>
@@ -1713,7 +1714,9 @@
       
         
         
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.instant","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.indexes","navigation.top","toc.follow"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+          
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.instant","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.indexes","navigation.top","toc.follow"],"redirect":"../../redirect.json","search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../../assets/javascripts/bundle.3c842f4c.min.js"></script>
