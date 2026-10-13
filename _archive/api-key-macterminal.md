@@ -15,7 +15,7 @@ See [Obtaining your AI-VERDE API Key](api-key.md) if you do not have your key ye
     - Use `Command + Space` to open Spotlight.
     - Type `Terminal` and press `Enter`.
 
-    ![open terminal panel](../assets/open_terminal.png){: style="width:50%"}
+    ![open terminal panel](assets/open_terminal.png){: style="width:50%"}
 
 ## Step 2: Determine Your Shell
 

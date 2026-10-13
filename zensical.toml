@@ -92,8 +92,6 @@ toggle = { icon = "material/brightness-4", name = "Switch to light mode" }
 "api/api-token-langchain.md" = "api/api-key-langchain.md"
 "api/api-token-llamaindex.md" = "api/api-key-llamaindex.md"
 "api/api-token-vscode.md" = "api/api-key-vscode.md"
-"api/api-token-macos.md" = "api/api-key-macos.md"
-"api/api-token-macterminal.md" = "api/api-key-macterminal.md"
 
 [project.markdown_extensions]
 admonition = {}
