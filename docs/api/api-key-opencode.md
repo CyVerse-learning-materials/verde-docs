@@ -4,8 +4,8 @@
 
 ## Prerequisites
 
-1. Your VERDE course or team must be configured to use Anthropic models (see instructor or team lead).
-2. Obtain your VERDE API Key. [Instructions can be found here](api-token.md).
+1. Obtain your VERDE API Key. [Instructions can be found here](api-token.md).
+2. Note the model name(s) you want to use. [Instructions for listing available models can be found here](api-key-models.md). Coding agents work best with models that support tool use; see the "Supports Tools" column in [Current CyVerse Models](../models-current.md).
 3. Install OpenCode. Instructions can be found here, [https://opencode.ai/](https://opencode.ai/).
 4. The remaining instructions assume you have an open terminal on a system with OpenCode and bash installed.
 
@@ -28,8 +28,8 @@ Here is an example configuration file for OpenCode that uses the AI-VERDE provid
         "gpt-oss-120b": { // this is the model name shown in AI-Verde
             "name": "my-gpt-oss-120b" // this is the display name of the model (what is shown by the `/model` command), you can choose any name you like
         },
-        "gemma-4-26b-a4b": {
-            "name": "my-gemma-4-26b-a4b"
+        "gemma-4-26b-it": {
+            "name": "my-gemma-4-26b-it"
         }
       },
       "options": {

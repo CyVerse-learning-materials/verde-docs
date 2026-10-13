@@ -4,8 +4,8 @@ You can follow these instructions to use your VERDE API Key after installing Cod
 
 ## Prerequisites
 
-1. Your VERDE course or team must be configured to use Anthropic models (see instructor or team lead).
-2. Obtain your VERDE API Key. [Instructions can be found here](api-token.md).
+1. Obtain your VERDE API Key. [Instructions can be found here](api-token.md).
+2. Note the model name you want to use. [Instructions for listing available models can be found here](api-key-models.md). Coding agents work best with models that support tool use; see the "Supports Tools" column in [Current CyVerse Models](../models-current.md).
 3. Install Codex. Instructions can be found here, [https://github.com/openai/codex](https://github.com/openai/codex).
 4. The remaining instructions assume you have an open terminal on a system with Codex and bash installed.
 

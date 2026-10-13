@@ -15,7 +15,7 @@ This documentation repository serves both end users and API developers with comp
 ## Documentation Structure
 
 - **AI-VERDE Chat**: User guides for the web-based chat interface
-- **AI-VERDE API**: API documentation with integration examples for LangChain, LlamaIndex, and VSCode
+- **AI-VERDE API**: Guides for obtaining an API key and listing models, plus integration guides for AWS Bedrock models (Claude Code), Python libraries (LangChain, LlamaIndex, Anthropic Python SDK), CLI coding assistants (Claude Code, Codex, OpenCode, Aider, Claude Code Router), IDEs, and desktop clients
 - **For Instructors**: Course creation and management guides
 
 ## Contributing

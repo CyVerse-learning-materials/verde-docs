@@ -10,11 +10,11 @@ Before using the AI-VERDE chat interface, ensure you are signed in with your ins
     AI-VERDE is currently only available to the University of Arizona community.
 
 1. Go to [https://chat.cyverse.ai/](https://chat.cyverse.ai/){target=_new}.
-2. Click **Sign In** button.
-3. Select your institutional provider.
+2. Click the **Sign In** button. You will be taken to CILogon.
+3. On CILogon, select your identity provider. For University of Arizona users, select **The University of Arizona**.
 4. Click the **Log On** button.
-5. Log in using your institutional login process.
-6. Click **Sign In**.
+5. Log in with your institution’s login process (for University of Arizona users, your NetID).
+6. You will be returned to AI-VERDE, signed in.
 
 ## 2. Select Your Team or Course
 

@@ -20,7 +20,7 @@ You can follow these instructions to use your AI-VERDE API Key with Aider, self-
     ```
 
 2. Replace `insert-your-aiverde-api-key` with your AI-VERDE API Key.
-3. Replace the text `insert-default-model` with the AI-VERDE model. For example, to use `phi4`, the model field would be set to `openai/phi4` or if you were using `nrp/phi4` model, the model field would be set to `openai/nrp/phi4`.
+3. Replace the text `insert-default-model` with the AI-VERDE model. For example, to use `gemma-4-26b-it`, the model field would be set to `openai/gemma-4-26b-it`. If the model name already contains a provider prefix (e.g. `nrp/<model>`), keep it and add `openai/` in front (e.g. `openai/nrp/<model>`).
 
 !!! Note
     This is the minimal configuration needed to use Aider. If you want to set other configuration for any models, you can add a `$HOME/.aider.model.metadata.json` file. Instructions on the configuration values that can be set in this file can be found here, [https://aider.chat/docs/config/adv-model-settings.html](https://aider.chat/docs/config/adv-model-settings.html).

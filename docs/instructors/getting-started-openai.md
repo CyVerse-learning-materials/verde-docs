@@ -31,4 +31,4 @@ Having trouble getting started? Here are the most common issues instructors face
 
 ## Next Step: Gather Your Course Details  
 
-Great work so far! Once your OpenAI key is shared, you’re ready to move on to the next stage: **[Creating a course](getting-started.md)** to prepare your roster (students, TAs, and co-instructors) and submit it for course setup.  
+Great work so far! Once your OpenAI key is shared, you’re ready to move on to the next stage: **[Creating a course](getting-started.md)** by email, then adding your roster (students, TAs, and co-instructors) yourself or by emailing it to support.  

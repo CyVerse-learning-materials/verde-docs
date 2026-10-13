@@ -2,7 +2,7 @@
 
 ## 1. Install LangChain python libraries
 ```bash
-pip install langchain_community
+pip install langchain-litellm
 ```
 
 ## 2. Obtain variables to integrate AI-VERDE with LangChain
@@ -18,7 +18,7 @@ curl -s -L "https://llm-api.cyverse.ai/v1/models" -H "Authorization: Bearer [AI-
 
 ## 3. Create python scripts
 ```python
-from langchain_community.chat_models import ChatLiteLLM
+from langchain_litellm import ChatLiteLLM
 
 llm = ChatLiteLLM(
     model="litellm_proxy/[MODEL NAME]",
@@ -38,7 +38,7 @@ if not os.environ.get("AIVERDE_API_KEY"):
   os.environ["AIVERDE_API_KEY"] = getpass.getpass("Enter AI-VERDE API key: ")
 api_key = os.environ["AIVERDE_API_KEY"]
 
-from langchain_community.chat_models import ChatLiteLLM
+from langchain_litellm import ChatLiteLLM
 
 llm = ChatLiteLLM(
     model="litellm_proxy/[MODEL NAME]",

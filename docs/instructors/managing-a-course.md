@@ -1,6 +1,6 @@
 # Managing a Course in AI-VERDE
 
-Once your course has been created, you’ll find it listed in your AI-VERDE dashboard.  From here, instructors can update course details, manage members, monitor usage, and design AI-powered learning activities.
+Once your course has been created, you’ll find it listed in your AI-VERDE dashboard.  From here, owners and instructors can update course details, manage members, monitor usage, and design AI-powered learning activities.
 
 
 ## Course Overview
@@ -8,14 +8,17 @@ The **Overview tab** is your course’s home base.
 Here, you can:
 
 - **Change the course name and description**  
-  - Update the title to match your course
+  - Update the title to match your course.
   - Add a clear description so students know the purpose.  
 - **Set start and end dates**  
-  - Determines when members can access course activities.  
-  - Example: If you set a start date for Sept 1, students will not be able to log in before that date.  
+  - Determines when the course appears on members’ dashboards.  
+  - Example: If you set a start date for Sept 1, the course will not appear on students’ dashboards before that date. Students can still sign in to AI-VERDE, but they will not see the course.  
+  - After the end date, the course no longer appears on members’ dashboards.  
 - **Adjust course activity status**  
-  - Switch a course to Active when ready for students.  
-  - Change to Inactive if you want to temporarily pause access without deleting the course.  
+  - Switch a course to **Active** when ready for students.  
+  - Change to **Inactive** if you want to temporarily hide the course from members’ dashboards without deleting it.  
+
+*A course appears on members’ dashboards only while it is Active and the current date is between its start and end dates.*
 
 
 ## Managing Members
@@ -30,10 +33,21 @@ Features:
   - Select a user and remove them from the course.  
   - Useful if a student drops the class or a TA changes.  
 - **Edit member roles**  
-  - Roles determine what access each user has:  
-    - **Instructor** → full course management rights.  
-    - **TA** → supports course but with limited management tools.  
-    - **Student** → participates in activities only.  
+  - Roles determine what access each user has (see below).  
+
+### Roles
+
+Each course has one **Owner** and may have any number of **Co-owners**, in addition to members with the **Instructor**, **TA**, or **Student** role.
+
+| Action                                                  | Owner / Co-owner | Instructor | TA  | Student |
+| ------------------------------------------------------- | :--------------: | :--------: | :-: | :-----: |
+| Edit course name, description, dates, and status        | ✓                | ✓          |     |         |
+| Add and remove members                                  | ✓                | ✓          | ✓   |         |
+| Change a member’s role                                  | ✓                | ✓          |     |         |
+| View course and individual usage                        | ✓                | ✓          | ✓   |         |
+| Create, edit, and delete prompts                        | ✓                | ✓          | ✓   |         |
+| Use the course chat and course prompts                  | ✓                | ✓          | ✓   | ✓       |
+| Get a personal API key                                  | ✓                | ✓          | ✓   | ✓       |
 
 *Tip: If a student says they can’t see the course, check the Members tab first to make sure they are listed.*  
 
@@ -42,8 +56,8 @@ Features:
 AI-VERDE resources are tied to a budget, managed in coordination with the CyVerse team.  
 
 - **Budgets are set by CyVerse**  
-  - Instructors cannot adjust the total budget, but can request changes via support.  
-- **What you can do as an instructor:**  
+  - The course budget and any per-student budgets are set by CyVerse staff. To request a change, email **ai-verde-support@cyverse.org**.  
+- **What you can do as an owner, instructor, or TA:**  
   - View **individual usage** → see how much each student has consumed.  
   - View **total course usage** → monitor whether the class is approaching budget limits.  
 - **Why it matters:**  
@@ -53,13 +67,13 @@ AI-VERDE resources are tied to a budget, managed in coordination with the CyVers
 
 
 ## AI Prompts and Content
-The **Prompts feature** lets instructors design and share structured prompts for AI activities.  
+The **Prompts feature** lets instructors and TAs design and share structured prompts for AI activities.  
 
 How to use it:
 
 1. Go to the Prompts tab.  
 2. Write a prompt (e.g., “Summarize today’s lecture into 5 key points”).  
-3. Sharing the prompt is automatic; members can generate AI responses inside Verde.  
+3. Sharing the prompt is automatic: as soon as it is saved, every member of the course can see it and use it to generate AI responses inside Verde.  
 4. Review outputs to ensure alignment with learning goals.  
 
 *This feature helps standardize assignments and ensures all students are working from the same AI instructions.*  
@@ -70,15 +84,13 @@ How to use it:
 Instructors can extend Verde beyond the platform using API keys.  
 
 - **Generate API keys**  
-  - Useful for advanced workflows, automation, or integrating Verde with other systems.  
-- **Export AI-VERDE outputs**  
-  - Save or send results from Verde to external platforms (e.g., LMS, research tools, or data analysis environments).  
+  - Useful for advanced workflows, automation, or integrating Verde with other systems. See the [AI-VERDE API](../api/index.md) documentation.  
 - **Why this matters:**  
   - Keeps Verde flexible, fitting into your department’s existing tools rather than operating as an isolated system.  
 
 
 ## Troubleshooting While Managing
-- **Course doesn’t show up?** → Confirm with support that your course was created and check start date.  
-- **A student can’t log in?** → Verify they are listed under Members. If not, add them.  
-- **Budget concerns?** → Contact CyVerse to review or request an adjustment.  
-- **Prompt not working as expected?** → Double-check formatting and reshare with the class.  
+- **Course doesn’t show up?** → Confirm with support that your course was created, that its status is Active, and that today is between its start and end dates.  
+- **A student can’t see the course?** → Verify they are listed under Members. If not, add them. Also check the course status and dates.  
+- **Budget concerns?** → Email **ai-verde-support@cyverse.org** to review or request an adjustment.  
+- **Prompt not working as expected?** → Double-check the prompt’s wording and edit it in the Prompts tab; changes are visible to members immediately.  
