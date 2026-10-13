@@ -7,7 +7,7 @@ Most OpenAI-compatible tools read two environment variables:
 - `OPENAI_API_KEY`: your AI-VERDE API key
 - `OPENAI_BASE_URL`: the AI-VERDE API base URL, `https://llm-api.cyverse.ai/v1`
 
-See [Obtaining your AI-VERDE API Key](api-token.md) if you do not have your key yet.
+See [Obtaining your AI-VERDE API Key](api-key.md) if you do not have your key yet.
 
 ## Step 1: Open Terminal
 

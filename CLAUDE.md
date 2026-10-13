@@ -47,7 +47,7 @@ The GitHub Actions workflow in `.github/workflows/ghpages.yml` deploys the gener
 ## Content Guidelines
 
 - Screenshots and images are heavily used for user guidance
-- API token examples are provided for multiple platforms and environments
+- API key examples are provided for multiple platforms and environments
 - Documentation targets university/educational use cases
 - Content assumes institutional authentication (currently University of Arizona) via CILogon, where UArizona users pick "The University of Arizona" as their identity provider
 - Support contact is `ai-verde-support@cyverse.org`; course setup is requested by email (no form), and rosters are added by instructors in the Members tab or emailed to support

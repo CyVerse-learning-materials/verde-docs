@@ -1,4 +1,4 @@
-# Examples of using your AI-VERDE API Token in MacOS
+# Examples of using your AI-VERDE API Key in MacOS
 
 Adding AI-Verde to ai platforms takes your chatbot to the next level with smarter, faster AI-powered responses. It handles everyday tasks like customer support, coding help, or data analysis, making your chatbot more versatile. Best of all, AI-Verde's integration works with most chatbot systems!
 ___

@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-1. Obtain your VERDE API Key. [Instructions can be found here](api-token.md).
+1. Obtain your VERDE API Key. [Instructions can be found here](api-key.md).
 2. Note the model name(s) you want to use. [Instructions for listing available models can be found here](api-key-models.md). Coding agents work best with models that support tool use; see the "Supports Tools" column in [Current CyVerse Models](../models-current.md).
 3. Install OpenCode. Instructions can be found here, [https://opencode.ai/](https://opencode.ai/).
 4. The remaining instructions assume you have an open terminal on a system with OpenCode and bash installed.

@@ -9,7 +9,7 @@ You can follow these instructions to use your VERDE API Key after installing Cla
 ## Prerequisites
 
 1. Your VERDE course or team must have access to at least one non-Anthropic model. Coding agents work best with models that support tool use; see the "Supports Tools" column in [Current CyVerse Models](../models-current.md).
-2. Obtain your VERDE API Key. [Instructions can be found here](api-token.md).
+2. Obtain your VERDE API Key. [Instructions can be found here](api-key.md).
 3. Note the model name(s) you want to use. [Instructions for listing available models can be found here](api-key-models.md).
 4. Install Claude Code. Instructions can be found here, [https://code.claude.com/docs/en/setup](https://code.claude.com/docs/en/setup).
 5. The remaining instructions assume you have an open terminal on a system with Claude Code and bash installed.

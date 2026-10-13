@@ -19,6 +19,6 @@ Click the "Details" button:
 
 ## 4. Copy and save your API key
 
-![Course Details Modal](../assets/api_key_course_details_api_token_tab.png){: style="width:75%"}
+![Course Details Modal](../assets/api_key_course_details_api_key_tab.png){: style="width:75%"}
 
 The models available for your course are listed in the "Available Models" section of the API Key page.

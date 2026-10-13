@@ -21,7 +21,7 @@ nav = [
   { "AI-VERDE API" = [
     { "Getting Started" = [
       { "What is the AI-VERDE API" = "api/index.md" },
-      { "Obtaining your AI-VERDE API Key" = "api/api-token.md" },
+      { "Obtaining your AI-VERDE API Key" = "api/api-key.md" },
       { "Getting a List of Models" = "api/api-key-models.md" },
     ] },
     { "Using Your API Key for AWS Bedrock Models" = [
@@ -30,8 +30,8 @@ nav = [
       { "Using VSCode Claude Code Extension" = "api/aws_bedrock_vscode_claude_code.md" },
     ] },
     { "Using Your API Key in Code" = [
-      { "LangChain" = "api/api-token-langchain.md" },
-      { "LlamaIndex" = "api/api-token-llamaindex.md" },
+      { "LangChain" = "api/api-key-langchain.md" },
+      { "LlamaIndex" = "api/api-key-llamaindex.md" },
       { "Anthropic Python SDK" = "api/aws_bedrock_anthropic_sdk_py.md" },
     ] },
     { "Using CLI Coding Assistants" = [
@@ -43,7 +43,7 @@ nav = [
       { "OpenCode" = "api/api-key-opencode.md" },
     ] },
     { "Using IDEs" = [
-      { "VSCode" = "api/api-token-vscode.md" },
+      { "VSCode" = "api/api-key-vscode.md" },
     ] },
     { "Using Desktop Clients" = [
       { "ChatboxAI.app" = "api/chatboxai.md" },

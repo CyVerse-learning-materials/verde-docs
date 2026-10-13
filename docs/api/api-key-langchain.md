@@ -7,7 +7,7 @@ pip install langchain-litellm
 
 ## 2. Obtain variables to integrate AI-VERDE with LangChain
 
-See [Obtaining your AI-VERDE API Key](api-token.md) for instructions.
+See [Obtaining your AI-VERDE API Key](api-key.md) for instructions.
 
 
 You can obtain a list of the models you have access to with the following command; denoted by "id":

@@ -8,7 +8,7 @@ Claude Code is Anthropic's official CLI coding assistant. AI-VERDE can serve as 
 
 ## Prerequisites
 
-1. Obtain your **AI-VERDE API key** and note the **AI-VERDE base URL**. The base URL used in the environment variables ends in `/bedrock` rather than `/v1`. [Instructions can be found here](api-token.md).
+1. Obtain your **AI-VERDE API key** and note the **AI-VERDE base URL**. The base URL used in the environment variables ends in `/bedrock` rather than `/v1`. [Instructions can be found here](api-key.md).
 2. Note the **Claude model ID** for Opus, Sonnet, and Haiku. [Instructions for listing available models can be found here](api-key-models.md). Model names in AI-VERDE are prefixed with an identifier for your course or team, separated by a dash or a slash (e.g. `my-team-claude-sonnet-4-6` or `my-team/claude-sonnet-4-6`).
 3. Install **Claude Code**. Instructions can be found at [https://code.claude.com/docs/en/setup](https://code.claude.com/docs/en/setup).
 4. The remaining instructions assume you have an open terminal with Claude Code installed on Linux or macOS.

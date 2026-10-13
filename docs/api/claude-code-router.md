@@ -4,7 +4,7 @@ You can follow these instructions to use your AI-VERDE API Key after installing 
 
 ## Prerequisites
 
-1. Obtain your AI-VERDE API Key. See [Obtaining your AI-VERDE API Key](api-token.md).
+1. Obtain your AI-VERDE API Key. See [Obtaining your AI-VERDE API Key](api-key.md).
 2. Note the model(s) you want to configure for Claude Code. See [Getting a List of Models](api-key-models.md).
 3. Install Claude Code. Instructions can be found here, [https://code.claude.com/docs/en/setup](https://code.claude.com/docs/en/setup).
 4. Install Claude Code Router. Instructions can be found here, [https://github.com/musistudio/claude-code-router](https://github.com/musistudio/claude-code-router).

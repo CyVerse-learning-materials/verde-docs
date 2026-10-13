@@ -10,7 +10,7 @@ AWS Bedrock is Amazon's fully managed service for accessing foundation models fr
 
 Before connecting Claude Code to AI-VERDE, you will need:
 
-- An **AI-VERDE API key** — sign in at [chat.cyverse.ai](https://chat.cyverse.ai), open your course or team details, and copy the key from the **API Key** tab. See [Obtaining your AI-VERDE API Key](api-token.md) for step-by-step instructions.
+- An **AI-VERDE API key** — sign in at [chat.cyverse.ai](https://chat.cyverse.ai), open your course or team details, and copy the key from the **API Key** tab. See [Obtaining your AI-VERDE API Key](api-key.md) for step-by-step instructions.
 - The **AI-VERDE Bedrock base URL**: `https://llm-api.cyverse.ai/bedrock` (or the URL shown in your course details, with `/v1` replaced by `/bedrock`).
 
 ## How It Works
