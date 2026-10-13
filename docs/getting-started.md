@@ -50,6 +50,10 @@ You can ask follow-up questions for further clarification, request examples, or 
 - **Explore Broadly**: If your team or course is not targeting specific documents, you can ask about a wide range of topics or request explanations for academic concepts.
 - **Engage in Multi-Step Conversations**: If you need deeper insights, use follow-up questions to refine the responses.
 
+## Usage Budgets
+
+Each course or team has a usage budget, and some courses also set a budget for each student. By default, budgets are monthly and reset on the 1st of each month. Some courses use a different reset schedule. If you reach your budget, you can use AI-VERDE again once it resets. Ask your instructor or team lead if you're unsure which schedule applies.
+
 ## Support and Feedback
 
 If you encounter issues or have suggestions, reach out to our support team using the built-in support chat:

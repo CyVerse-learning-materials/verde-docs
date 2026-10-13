@@ -42,6 +42,7 @@ This guide covers the most common issues instructors face when getting started, 
 
 - **Budget seems off or not updating**  
   - Budgets are managed by CyVerse.  
+  - By default, budgets are monthly and reset on the 1st of each month, so usage drops back to zero at that point. Some courses use a different reset schedule.  
   - Instructors can view usage but not set budgets — email **ai-verde-support@cyverse.org** for adjustments.  
 
 - **Students can’t access prompts**  
