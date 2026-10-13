@@ -1,4 +1,4 @@
-# Obtaining your AI-VERDE API Kay
+# Obtaining your AI-VERDE API Key
 
 ## 1. Sign In
 
@@ -20,4 +20,4 @@ Click the "Details" button:
 
 ![Course Details Modal](../assets/api_key_course_details_api_token_tab.png){: style="width:75%"}
 
-The models available for your course will are listed in the "Available Models" section of the API Key page.
+The models available for your course are listed in the "Available Models" section of the API Key page.

@@ -4,22 +4,24 @@
 
 ## Prerequisites
 
-1. Your VERDE course or team must be configured to use Anthropic models (see instructor or team lead)
-2. Obtain your VERDE API Key. [Instructions can be found here](api-token.md)
-3. Install OpenCode. Instructions can be found here, https://opencode.ai/
-4. The remaining instructions assume you have an open terminal on system with OpenCode and bash installed.
+1. Your VERDE course or team must be configured to use Anthropic models (see instructor or team lead).
+2. Obtain your VERDE API Key. [Instructions can be found here](api-token.md).
+3. Install OpenCode. Instructions can be found here, [https://opencode.ai/](https://opencode.ai/).
+4. The remaining instructions assume you have an open terminal on a system with OpenCode and bash installed.
 
-## 1. Setup the opencode configuration file
+## 1. Set up the OpenCode configuration file
 
 OpenCode uses a configuration file to define custom providers and models. The configuration file is located at either of the following locations:
+
 - (Mac/Linux) `~/.config/opencode/opencode.json`
-- (Mac/Linux)`~/.config/opencode/opencode.jsonc` (`jsonc` is a superset of `json` that allows comments)
+- (Mac/Linux) `~/.config/opencode/opencode.jsonc` (`jsonc` is a superset of `json` that allows comments)
 
 Here is an example configuration file for OpenCode that uses the AI-VERDE provider and models:
+
 ```jsonc
 {
   "provider": {
-    "litellm": { // this is identifier for the provider, you can choose any name you like, need to be unique in the provider list
+    "litellm": { // this is the identifier for the provider, you can choose any name you like, it needs to be unique in the provider list
       "name": "AI-Verde", // this is the display name of the provider (what is shown by the `/model` command), you can choose any name you like
       "npm": "@ai-sdk/openai-compatible", // this is the npm package that provides the provider's API, use `@ai-sdk/openai-compatible` unless you know what you are doing
       "models": {
@@ -44,7 +46,8 @@ Here is an example configuration file for OpenCode that uses the AI-VERDE provid
 ## 2. Start OpenCode
 
 You can then run OpenCode.
-```
+
+```bash
 opencode
 ```
 

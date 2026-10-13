@@ -34,11 +34,10 @@ This tutorial explains how to securely use an API token on macOS.
 
 ### Step 3.1: Determine Your Shell
 
-Check which shell you’re using by running:      
-   ```echo $SHELL```
+Check which shell you’re using by running: `echo $SHELL`
 
-- If the output is /bin/zsh, your configuration file is ```~/.zshrc.```
-- If the output is /bin/bash, your configuration file is```~/.bash_profile.```
+- If the output is `/bin/zsh`, your configuration file is `~/.zshrc`.
+- If the output is `/bin/bash`, your configuration file is `~/.bash_profile`.
 
 ### Step 3.2: Open the Configuration File
 
@@ -56,16 +55,17 @@ Open the appropriate file in a text editor:
 
 ### Step 3.4: Save and Exit
 
-   In ```nano```, ```press Ctrl + O``` to save the file.
+   In `nano`, press `Ctrl + O` to save the file.
     Press ```Enter``` to confirm.
     Press ```Ctrl + X``` to exit.
 
-- . Confirm the token is set correctly: 
+- Confirm the token is set correctly:
   
   ``` echo $OPENAI_BASE_URL``` 
-- The terminal should display your token 
+- The terminal should display your token.
 
  ![open nano](../assets/nano_zshrc.png){: style="width:50%"}
+
 ---
 ## Step 4: Use the API Token in a cURL Request 
 

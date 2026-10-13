@@ -1,4 +1,4 @@
-#  Troubleshooting Guide
+# Troubleshooting Guide
 
 This guide covers the most common issues instructors face when getting started, creating a course, and managing a course in AI-VERDE.
 
@@ -6,7 +6,7 @@ This guide covers the most common issues instructors face when getting started, 
 ## Getting Started Issues
 
 - **Can’t find the API key after creating it**  
-  - OpenAI only shows the key once. If you lost it, return to the [API Keys page](https://platform.openai.com/account/api-keys) and generate a new one.  
+  - OpenAI only shows the key once. If you lost it, return to the [API Keys page](https://platform.openai.com/api-keys) and generate a new one.  
 
 - **Stache entry not accessible to the AI-VERDE team**  
   - Double-check you shared the entry with all required addresses:  
@@ -35,9 +35,9 @@ This guide covers the most common issues instructors face when getting started, 
 
 ## Managing a Course Issues
 
-- **Course doesn’t show up?** 
+- **Course doesn’t show up?**
   - Confirm with support that your course was created and check start date.  
-- **A student can’t log in?** 
+- **A student can’t log in?**
   - Verify they are listed under Members. If not, add them.  
 
 - **Budget seems off or not updating**  

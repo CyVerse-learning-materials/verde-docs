@@ -7,13 +7,13 @@ This guide will help you get up and running quickly, so you can start making the
 Before using the AI-VERDE chat interface, ensure you are signed in with your institution's credentials.
 
 !!! Note
-    AI-VERDE is currently only available to the University of Arizona community
+    AI-VERDE is currently only available to the University of Arizona community.
 
 1. Go to [https://chat.cyverse.ai/](https://chat.cyverse.ai/){target=_new}.
 2. Click **Sign In** button.
-3. Select your institutional provider
-4. Click on the **Log On** button.
-5. Login using your institutional login process
+3. Select your institutional provider.
+4. Click the **Log On** button.
+5. Log in using your institutional login process.
 6. Click **Sign In**.
 
 ## 2. Select Your Team or Course
@@ -22,7 +22,7 @@ Once signed in, find your course or team card and click on the chat button.
 
 ![course chat button](assets/course_chat_button.png){: style="width:50%"}
 
-## 2. Ask Your First Question
+## 3. Ask Your First Question
 
 After clicking on the course or team card, the page will show a text box where you can interact with AI-VERDE. You can then:
 
@@ -32,7 +32,7 @@ After clicking on the course or team card, the page will show a text box where y
 
 ![course chat](assets/course_chat.png){: style="width:100%"}
 
-## 3. Continue the Conversation
+## 4. Continue the Conversation
 
 You can ask follow-up questions for further clarification, request examples, or explore related topics.
 
@@ -55,4 +55,3 @@ You can ask follow-up questions for further clarification, request examples, or 
 If you encounter issues or have suggestions, reach out to our support team using the built-in support chat:
 
 ![support button](assets/contact_support.png){: style="width:50%"}
-

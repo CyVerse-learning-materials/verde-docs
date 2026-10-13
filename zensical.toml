@@ -72,14 +72,11 @@ features = [
 
 [project.theme.font]
 text = "Roboto"
-code = "Regular"
-
-[project.theme.icon]
-logo = "material/cogs"
+code = "Roboto Mono"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
-scheme = "green"
+scheme = "aiverde"
 toggle = { icon = "material/brightness-7", name = "Switch to dark mode" }
 
 [[project.theme.palette]]
@@ -107,7 +104,7 @@ toc = { permalink = true, title = "On this page" }
 "pymdownx.highlight" = {}
 "pymdownx.inlinehilite" = {}
 "pymdownx.keys" = {}
-"pymdownx.magiclink" = { repo_url_shorthand = true, user = "squidfunk", repo = "mkdocs-material" }
+"pymdownx.magiclink" = { repo_url_shorthand = true, user = "CyVerse-learning-materials", repo = "verde-docs" }
 "pymdownx.mark" = {}
 "pymdownx.smartsymbols" = {}
 "pymdownx.superfences" = { custom_fences = [ { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" } ] }

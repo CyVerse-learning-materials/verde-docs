@@ -6,6 +6,7 @@ Once your course has been created, you’ll find it listed in your AI-VERDE dash
 ## Course Overview
 The **Overview tab** is your course’s home base.  
 Here, you can:
+
 - **Change the course name and description**  
   - Update the title to match your course
   - Add a clear description so students know the purpose.  
@@ -14,13 +15,14 @@ Here, you can:
   - Example: If you set a start date for Sept 1, students will not be able to log in before that date.  
 - **Adjust course activity status**  
   - Switch a course to Active when ready for students.  
-  - Change to Inactive If you want to temporarily pause access without deleting the course.  
+  - Change to Inactive if you want to temporarily pause access without deleting the course.  
 
 
 ## Managing Members
 The **Members tab** gives you full control over who is enrolled and what they can do.  
 
 Features:
+
 - **Add new members**  
   - Enter the user’s email address.  
   - Assign them a role at the time of adding.  
@@ -54,9 +56,10 @@ AI-VERDE resources are tied to a budget, managed in coordination with the CyVers
 The **Prompts feature** lets instructors design and share structured prompts for AI activities.  
 
 How to use it:
+
 1. Go to the Prompts tab.  
 2. Write a prompt (e.g., “Summarize today’s lecture into 5 key points”).  
-3. Sharing the prompt is automatic, members can generate AI responses inside Verde.  
+3. Sharing the prompt is automatic; members can generate AI responses inside Verde.  
 4. Review outputs to ensure alignment with learning goals.  
 
 *This feature helps standardize assignments and ensures all students are working from the same AI instructions.*  
@@ -79,4 +82,3 @@ Instructors can extend Verde beyond the platform using API keys.
 - **A student can’t log in?** → Verify they are listed under Members. If not, add them.  
 - **Budget concerns?** → Contact CyVerse to review or request an adjustment.  
 - **Prompt not working as expected?** → Double-check formatting and reshare with the class.  
-
