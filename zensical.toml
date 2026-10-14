@@ -51,6 +51,7 @@ nav = [
   ] },
   { "For Instructors (and staff)" = [
     { "Getting Started" = "instructors/getting-started.md" },
+    { "Managing a Course" = "instructors/managing-a-course.md" },
   ] },
 ]
 
