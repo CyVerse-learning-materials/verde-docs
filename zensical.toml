@@ -43,8 +43,8 @@ nav = [
       { "Aider" = "api/aider.md" },
     ] },
     { "Using IDEs" = [
-      { "vscode-openai extension" = "api/api-key-vscode.md" },
       { "Claude Code for VS Code (using Anthropic Models)" = "api/api-key-vscode-claude-code.md" },
+      { "Codex for VS Code" = "api/api-key-vscode-codex.md" },
     ] },
     { "Using Desktop Clients" = [
       { "Chatbox AI" = "api/chatboxai.md" },
@@ -93,7 +93,8 @@ toggle = { icon = "material/brightness-4", name = "Switch to light mode" }
 "api/api-token.md" = "api/api-key.md"
 "api/api-token-langchain.md" = "api/api-key-langchain.md"
 "api/api-token-llamaindex.md" = "api/api-key-llamaindex.md"
-"api/api-token-vscode.md" = "api/api-key-vscode.md"
+"api/api-token-vscode.md" = "api/api-key-vscode-codex.md"
+"api/api-key-vscode.md" = "api/api-key-vscode-codex.md"
 "api/aws_bedrock_anthropic_sdk_py.md" = "api/api-key-anthropic-sdk-py.md"
 
 [project.markdown_extensions]

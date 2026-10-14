@@ -41,7 +41,7 @@ The GitHub Actions workflow in `.github/workflows/ghpages.yml` deploys the gener
 ## Key Documentation Sections
 
 - **AI-VERDE Chat**: User guides for the chat interface
-- **AI-VERDE API**: API key and model list guides, plus integration guides for AWS Bedrock (Claude Code, Claude Code for VS Code), Python libraries (LangChain, LlamaIndex, Anthropic Python SDK), CLI coding assistants (Claude Code Router, Aider, Claude Code, Codex, OpenCode), IDEs (vscode-openai, Claude Code for VS Code), and desktop clients (Chatbox AI)
+- **AI-VERDE API**: API key and model list guides, plus integration guides for AWS Bedrock (Claude Code, Claude Code for VS Code), Python libraries (LangChain, LlamaIndex, Anthropic Python SDK), CLI coding assistants (Claude Code Router, Aider, Claude Code, Codex, OpenCode), IDEs (Claude Code for VS Code, Codex for VS Code), and desktop clients (Chatbox AI)
 - **For Instructors**: Course creation and management guides
 
 ## Content Guidelines
