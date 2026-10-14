@@ -1,22 +1,21 @@
 # Using your AI-VERDE API key to integrate with LlamaIndex
 
+## Prerequisites
+
+1. Obtain your AI-VERDE API key. [Instructions can be found here](api-key.md).
+2. Note the model name you want to use. [Instructions for listing available models can be found here](api-key-models.md).
+3. Install Python 3 with `pip`.
+
 ## 1. Install LlamaIndex libraries
+
 ```bash
 pip install llama-index-core llama-index-llms-litellm
 ```
 
-## 2. Obtain variables to integrate AI-VERDE with LlamaIndex
+## 2. Write a Python script
 
-See [Obtaining your AI-VERDE API Key](api-key.md) for instructions.
+Replace `[MODEL NAME]` with a model name from your model list, keeping the `litellm_proxy/` prefix (e.g. `litellm_proxy/gemma-4-26b-it`). LiteLLM's `litellm_proxy` provider takes the base URL without `/v1`.
 
-
-You can obtain a list of the models you have access to with the following command; denoted by "id":
-
-```bash
-curl -s -L "https://llm-api.cyverse.ai/v1/models" -H "Authorization: Bearer [AI-VERDE API KEY]" -H 'Content-Type: application/json' | jq
-```
-
-## 3. Write python scripts
 ```python
 from llama_index.llms.litellm import LiteLLM
 from llama_index.core.llms import ChatMessage
@@ -24,7 +23,8 @@ from llama_index.core.llms import ChatMessage
 llm = LiteLLM(
     model="litellm_proxy/[MODEL NAME]",
     api_base="https://llm-api.cyverse.ai",
-    api_key="[AI-VERDE API KEY]",)
+    api_key="[AI-VERDE API KEY]",
+)
 
 message = ChatMessage(role="user", content="Hey! how's it going?")
 response = llm.chat([message])
@@ -38,9 +38,9 @@ Alternatively, you can include the API key as an environment variable or secret 
 import getpass
 import os
 
-if not os.environ.get("AIVERDE_API_KEY"):
-  os.environ["AIVERDE_API_KEY"] = getpass.getpass("Enter AI-VERDE API key: ")
-api_key = os.environ["AIVERDE_API_KEY"]
+if not os.environ.get("VERDE_API_KEY"):
+    os.environ["VERDE_API_KEY"] = getpass.getpass("Enter AI-VERDE API key: ")
+api_key = os.environ["VERDE_API_KEY"]
 
 from llama_index.llms.litellm import LiteLLM
 from llama_index.core.llms import ChatMessage
@@ -48,7 +48,8 @@ from llama_index.core.llms import ChatMessage
 llm = LiteLLM(
     model="litellm_proxy/[MODEL NAME]",
     api_base="https://llm-api.cyverse.ai",
-    api_key=api_key,)
+    api_key=api_key,
+)
 
 message = ChatMessage(role="user", content="Hey! how's it going?")
 response = llm.chat([message])

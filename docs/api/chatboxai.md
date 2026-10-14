@@ -1,10 +1,10 @@
 # Chatbox AI
 
-Chatbox AI is a desktop application that works on Windows, MacOS, Android, iOS, Web, and Linux. These instructions should apply for both Windows and MacOS versions with some variations between the two platforms.
+Chatbox AI is a chat client that works on Windows, macOS, Linux, Android, iOS, and the web. These instructions are written for the Windows and macOS desktop versions; other versions vary slightly.
 
 ## Prerequisites
 
-1. Obtain your AI-VERDE API Key and API URL. [Instructions can be found here](api-key.md).
+1. Obtain your AI-VERDE API Key. [Instructions can be found here](api-key.md).
 2. Note the model(s) you want to configure for Chatbox AI. [Instructions can be found here](api-key-models.md).
 3. Install Chatbox AI by visiting this page: [https://chatboxai.app/en#download](https://chatboxai.app/en#download).
 4. The remaining instructions assume you have Chatbox AI installed.
@@ -24,7 +24,7 @@ For these steps, you can refer to the screenshots below.
 ![chatbox ai](../assets/chatboxai02.png){: style="width:80%"}<br/>
 You should then be shown the ai-verde configuration panel on the right.
 8. Enter (or paste) your AI-VERDE Key in the API Key field.
-9. Enter (or paste) the AI-VERDE API URL in the API Host field.<br/>
+9. Enter `https://llm-api.cyverse.ai/v1` in the API Host field, and leave the API Path field empty.<br/>
 ![chatbox ai](../assets/chatboxai03.png){: style="width:80%"}
 10. In the model section, click the "New" button, and a new model dialog box will be shown.
 11. Enter the model in the "Model ID" field.
@@ -33,6 +33,7 @@ You should then be shown the ai-verde configuration panel on the right.
     !!! Note
 
         Capabilities for a model can be modified at a later time.
+
 13. Click on the "Save" button<br/>
 ![chatbox ai](../assets/chatboxai04.png){: style="width:80%"}<br/>
 14. You can repeat steps 10-13 to add additional models.

@@ -9,12 +9,12 @@
 ## Prerequisites
 
 1. Obtain your **AI-VERDE API key** and note the **AI-VERDE base URL**. The base URL used in the script must have the `/v1` suffix removed, if present. [Instructions can be found here](api-key.md).
-2. Note the **Claude model ID** you want to use. [Instructions for listing available models can be found here](api-key-models.md). Model names in AI-VERDE are prefixed with an identifier for your course or team, separated by a dash or a slash (e.g. `my-team-claude-sonnet-4-6` or `my-team/claude-sonnet-4-6`).
-3. Install **Anthropic Python SDK**. Instructions can be found at [https://github.com/anthropics/anthropic-sdk-python](https://github.com/anthropics/anthropic-sdk-python).
+2. Note the **Claude model ID** you want to use. [Instructions for listing available models can be found here](api-key-models.md). Model names in AI-VERDE are prefixed with an identifier for your course or team, separated by a dash or a slash (e.g. `my-team-claude-sonnet-5` or `my-team/claude-sonnet-5`).
+3. Install the **Anthropic Python SDK** with `pip install anthropic`. More information can be found at [https://github.com/anthropics/anthropic-sdk-python](https://github.com/anthropics/anthropic-sdk-python).
 
 ## Example Python script using Anthropic Python SDK with AI-VERDE
 
-Export the following environment variables for your script.
+Export the following environment variable for your script.
 
 ```bash
 export ANTHROPIC_API_KEY="<your-ai-verde-api-key>"
@@ -45,11 +45,10 @@ message = client.messages.create(
             "content": "Hello, Claude",
         }
     ],
-
     model="<model name>", # Replace with a Claude model name from your model list
 )
 
-print(message.content)
+print(message.content[0].text)
 ```
 
 !!! Note

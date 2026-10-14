@@ -41,7 +41,7 @@ The GitHub Actions workflow in `.github/workflows/ghpages.yml` deploys the gener
 ## Key Documentation Sections
 
 - **AI-VERDE Chat**: User guides for the chat interface
-- **AI-VERDE API**: API key and model list guides, plus integration guides for AWS Bedrock (Claude Code, Claude Code for VS Code), Python libraries (LangChain, LlamaIndex, Anthropic Python SDK), CLI coding assistants (Claude Code Router, Aider, Claude Code, Codex, OpenCode), IDEs (VSCode), and desktop clients (ChatboxAI)
+- **AI-VERDE API**: API key and model list guides, plus integration guides for AWS Bedrock (Claude Code, Claude Code for VS Code), Python libraries (LangChain, LlamaIndex, Anthropic Python SDK), CLI coding assistants (Claude Code Router, Aider, Claude Code, Codex, OpenCode), IDEs (vscode-openai, Claude Code for VS Code), and desktop clients (Chatbox AI)
 - **For Instructors**: Course creation and management guides
 
 ## Content Guidelines
@@ -60,4 +60,7 @@ Keep integration guides consistent with these rules (summarized for readers in `
 - **Base URLs**: OpenAI-compatible clients use `https://llm-api.cyverse.ai/v1`; Anthropic-style clients (Claude Code, Anthropic SDK) use `https://llm-api.cyverse.ai`; AWS Bedrock uses `https://llm-api.cyverse.ai/bedrock`, and the Bedrock-style API is reserved for Claude Code only (the Anthropic SDK uses the Anthropic-style API). LiteLLM `litellm_proxy` examples (LangChain, LlamaIndex) use the URL without `/v1`.
 - **Claude Code key variable**: non-Bedrock pages use `ANTHROPIC_API_KEY`; Bedrock pages must use `ANTHROPIC_AUTH_TOKEN`, because Claude Code only sends that variable on the Bedrock route.
 - **Claude Code persistence**: document the `env` block in `~/.claude/settings.json` first and shell-profile exports second. Claude Code does not write exported variables into `settings.json`. The Claude Code for VS Code extension is the exception: configure it only through `claudeCode.environmentVariables`, since `~/.claude/settings.json` does not reach the extension's login check.
-- **Model names**: AI-VERDE model names are prefixed with a course/team identifier joined by a dash or slash (e.g. `my-team-claude-sonnet-4-6` or `my-team/claude-sonnet-4-6`). Point readers to `api/api-key-models.md`, not to providers' public model lists.
+- **Model names**: models provided for a course or team are prefixed with a course/team identifier joined by a dash or slash (e.g. `my-team-claude-sonnet-5` or `my-team/claude-sonnet-5`). CyVerse-hosted models listed in `models-current.md` are unprefixed; use `gemma-4-26b-it` for open-weight examples. Point readers to `api/api-key-models.md`, not to providers' public model lists.
+- **Key variable outside Claude Code**: when a guide stores the key in an environment variable (Codex, OpenCode, Python examples, curl), name it `VERDE_API_KEY`.
+- **Provider ID**: name the provider `ai-verde` in client configs (Codex, OpenCode, Claude Code Router, Chatbox AI).
+- **Naming**: write AI-VERDE (not VERDE or Verde), VS Code, and Chatbox AI in prose.

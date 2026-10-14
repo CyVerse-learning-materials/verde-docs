@@ -2,6 +2,10 @@
 
 Claude Code is Anthropic's official CLI coding assistant. AI-VERDE can serve as the backend for Claude Code, routing requests through AI-VERDE's budget controls and guardrails to Anthropic Claude models hosted on AWS Bedrock.
 
+!!! Tip
+
+    If your course or team's Claude models are hosted on AWS Bedrock, we recommend using this Bedrock-style setup with Claude Code rather than the [Anthropic-style setup](api-key-claude.md). Ask your instructor or team lead if you're unsure where your models are hosted.
+
 !!! Note
 
     Unlike the [non-Bedrock Claude Code setup](api-key-claude.md), which uses `ANTHROPIC_API_KEY`, the Bedrock setup must put your AI-VERDE API key in `ANTHROPIC_AUTH_TOKEN`. When talking to a Bedrock endpoint, Claude Code only sends `ANTHROPIC_AUTH_TOKEN`; an `ANTHROPIC_API_KEY` would be ignored.
@@ -9,9 +13,9 @@ Claude Code is Anthropic's official CLI coding assistant. AI-VERDE can serve as 
 ## Prerequisites
 
 1. Obtain your **AI-VERDE API key** and note the **AI-VERDE base URL**. The base URL used in the environment variables ends in `/bedrock` rather than `/v1`. [Instructions can be found here](api-key.md).
-2. Note the **Claude model ID** for Opus, Sonnet, and Haiku. [Instructions for listing available models can be found here](api-key-models.md). Model names in AI-VERDE are prefixed with an identifier for your course or team, separated by a dash or a slash (e.g. `my-team-claude-sonnet-4-6` or `my-team/claude-sonnet-4-6`).
+2. Note the **Claude model ID** for Opus, Sonnet, and Haiku. [Instructions for listing available models can be found here](api-key-models.md). Model names in AI-VERDE are prefixed with an identifier for your course or team, separated by a dash or a slash (e.g. `my-team-claude-sonnet-5` or `my-team/claude-sonnet-5`).
 3. Install **Claude Code**. Instructions can be found at [https://code.claude.com/docs/en/setup](https://code.claude.com/docs/en/setup).
-4. The remaining instructions assume you have an open terminal with Claude Code installed on Linux or macOS.
+4. The remaining instructions assume a terminal on macOS or Linux with bash and Claude Code installed. On Windows, Option 1 below works the same way, with the file at `%USERPROFILE%\.claude\settings.json`.
 
 ## 1. Configure Claude Code
 
@@ -42,14 +46,18 @@ For example:
     "ANTHROPIC_BEDROCK_BASE_URL": "https://llm-api.cyverse.ai/bedrock",
     "CLAUDE_CODE_SKIP_BEDROCK_AUTH": "1",
     "CLAUDE_CODE_USE_BEDROCK": "1",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "my-team-claude-opus-4-6",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "my-team-claude-sonnet-4-6",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "my-team-claude-opus-5",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "my-team-claude-sonnet-5",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "my-team-claude-haiku-4-5"
   }
 }
 ```
 
 If the file already has other settings, add the `env` section alongside them rather than replacing the file.
+
+!!! Warning
+
+    `~/.claude/settings.json` holds your API key. Keep the key in this user-level file, not in a project's `.claude/settings.json`, and don't commit or share it.
 
 ### Option 2: Shell environment variables
 
@@ -83,4 +91,4 @@ You can run `/status` inside Claude Code to confirm it is using Amazon Bedrock w
 
 ## If you need to change your API Key
 
-If for some reason you need to change your VERDE API Key, update `ANTHROPIC_AUTH_TOKEN` wherever you set it in step 1 (`~/.claude/settings.json` or your shell profile), then restart Claude Code.
+If for some reason you need to change your AI-VERDE API key, update `ANTHROPIC_AUTH_TOKEN` wherever you set it in step 1 (`~/.claude/settings.json` or your shell profile), then restart Claude Code.

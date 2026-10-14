@@ -7,7 +7,7 @@ You can follow these instructions to use your AI-VERDE API Key with Aider, self-
 1. Obtain your AI-VERDE API Key. See [Obtaining your AI-VERDE API Key](api-key.md).
 2. Note the model(s) you want to configure for Aider. See [Getting a List of Models](api-key-models.md).
 3. Install Aider. Instructions can be found here, [https://aider.chat/#getting-started](https://aider.chat/#getting-started).
-4. The remaining instructions assume you have an open terminal on a Linux system with Aider.
+4. The remaining instructions assume a terminal on macOS or Linux with bash and Aider installed.
 
 ## 1. Configuring Aider
 
@@ -20,7 +20,10 @@ You can follow these instructions to use your AI-VERDE API Key with Aider, self-
     ```
 
 2. Replace `insert-your-aiverde-api-key` with your AI-VERDE API Key.
-3. Replace the text `insert-default-model` with the AI-VERDE model. For example, to use `gemma-4-26b-it`, the model field would be set to `openai/gemma-4-26b-it`. If the model name already contains a provider prefix (e.g. `nrp/<model>`), keep it and add `openai/` in front (e.g. `openai/nrp/<model>`).
+3. Replace the text `insert-default-model` with the AI-VERDE model. For example, to use `gemma-4-26b-it`, the model field would be set to `openai/gemma-4-26b-it`. If the model name contains a slash (e.g. `my-team/claude-sonnet-5`), keep it as is and add `openai/` in front (e.g. `openai/my-team/claude-sonnet-5`).
+
+!!! Warning
+    `$HOME/.aider.conf.yml` holds your API key. Keep it in your home directory and don't commit or share it.
 
 !!! Note
     This is the minimal configuration needed to use Aider. If you want to set other configuration for any models, you can add a `$HOME/.aider.model.metadata.json` file. Instructions on the configuration values that can be set in this file can be found here, [https://aider.chat/docs/config/adv-model-settings.html](https://aider.chat/docs/config/adv-model-settings.html).

@@ -16,8 +16,8 @@ Before using the API you will need to:
 | [Using Your API Key for AWS Bedrock Models](aws_bedrock.md)        | Claude models on AWS Bedrock with Claude Code and the Claude Code for VS Code extension            |
 | [Using Your API Key in Code](api-key-langchain.md)               | Python integration with LangChain, LlamaIndex, and the Anthropic Python SDK                    |
 | [Using CLI Coding Assistants](claude-code-router.md)               | Terminal-based AI coding tools: Claude Code Router, Aider, Claude Code, Codex, and OpenCode     |
-| [Using IDEs](api-key-vscode.md)                                  | Editor integration for VSCode                                                                  |
-| [Using Desktop Clients](chatboxai.md)                              | GUI chat clients such as ChatboxAI                                                             |
+| [Using IDEs](api-key-vscode.md)                                  | VS Code integration: the vscode-openai extension and Claude Code for VS Code                    |
+| [Using Desktop Clients](chatboxai.md)                              | GUI chat clients such as Chatbox AI                                                             |
 
 ## Base URL and Authentication
 
@@ -25,8 +25,8 @@ When configuring a client, you need your **API key** (copied from the AI-VERDE d
 
 | API style         | Base URL                             | Used by                                                                                                                                                             |
 | ----------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| OpenAI-compatible | `https://llm-api.cyverse.ai/v1`      | [Aider](aider.md), [Codex](api-key-codex.md), [OpenCode](api-key-opencode.md), [Claude Code Router](claude-code-router.md), [ChatboxAI](chatboxai.md), [VSCode](api-key-vscode.md), and most OpenAI clients |
-| Anthropic-style   | `https://llm-api.cyverse.ai`         | [Claude Code (Anthropic models)](api-key-claude.md), [Claude Code (non-Anthropic models)](api-key-claude-non-anthropic.md), [Anthropic Python SDK](aws_bedrock_anthropic_sdk_py.md) |
+| OpenAI-compatible | `https://llm-api.cyverse.ai/v1`      | [Aider](aider.md), [Codex](api-key-codex.md), [OpenCode](api-key-opencode.md), [Claude Code Router](claude-code-router.md), [Chatbox AI](chatboxai.md), [vscode-openai](api-key-vscode.md), and most OpenAI clients |
+| Anthropic-style   | `https://llm-api.cyverse.ai`         | [Claude Code (Anthropic models)](api-key-claude.md), [Claude Code (non-Anthropic models)](api-key-claude-non-anthropic.md), [Claude Code for VS Code](api-key-vscode-claude-code.md), [Anthropic Python SDK](api-key-anthropic-sdk-py.md) |
 | AWS Bedrock       | `https://llm-api.cyverse.ai/bedrock` | [Claude Code on Bedrock](aws_bedrock_claude_code.md), [Claude Code for VS Code on Bedrock](aws_bedrock_vscode_claude_code.md)                                         |
 
 If your course details show a different base URL ending in `/v1`, use it for OpenAI-compatible clients, remove `/v1` for Anthropic-style clients, and replace `/v1` with `/bedrock` for AWS Bedrock.

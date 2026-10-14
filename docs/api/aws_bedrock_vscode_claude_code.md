@@ -1,11 +1,15 @@
-# Using VSCode Claude Code Extension with AI-VERDE
+# Using Claude Code for VS Code with AI-VERDE (AWS Bedrock)
 
-VSCode Claude Code Extension is an official extension from Anthropic for using Claude Code within VSCode. AI-VERDE can serve as the backend for the extension, routing requests through AI-VERDE's budget controls and guardrails to Anthropic Claude models hosted on AWS Bedrock.
+Claude Code for VS Code is Anthropic's official extension for using Claude Code within VS Code. AI-VERDE can serve as the backend for the extension, routing requests through AI-VERDE's budget controls and guardrails to Anthropic Claude models hosted on AWS Bedrock.
+
+!!! Tip
+
+    If your course or team's Claude models are hosted on AWS Bedrock, we recommend using this Bedrock-style setup with Claude Code rather than the [Anthropic-style setup](api-key-vscode-claude-code.md). Ask your instructor or team lead if you're unsure where your models are hosted.
 
 ## Prerequisites
 
 1. Obtain your **AI-VERDE API key** and note the **AI-VERDE base URL**. The base URL used in the environment variables ends in `/bedrock` rather than `/v1`. [Instructions can be found here](api-key.md).
-2. Note the **Claude model ID** for Opus, Sonnet, and Haiku. [Instructions for listing available models can be found here](api-key-models.md). Model names in AI-VERDE are prefixed with an identifier for your course or team, separated by a dash or a slash (e.g. `my-team-claude-sonnet-4-6` or `my-team/claude-sonnet-4-6`).
+2. Note the **Claude model ID** for Opus, Sonnet, and Haiku. [Instructions for listing available models can be found here](api-key-models.md). Model names in AI-VERDE are prefixed with an identifier for your course or team, separated by a dash or a slash (e.g. `my-team-claude-sonnet-5` or `my-team/claude-sonnet-5`).
 3. Install **VS Code**. Instructions can be found at [https://code.visualstudio.com/download](https://code.visualstudio.com/download).
 
 ## 1. Install the "Claude Code for VS Code" extension from Anthropic
@@ -39,17 +43,17 @@ You will need to add the following environment variables to the `claudeCode.envi
 
 - add your AI-VERDE API key as the ANTHROPIC_AUTH_TOKEN
 - add your Bedrock base URL as ANTHROPIC_BEDROCK_BASE_URL
-- replace the model IDs with your own team model IDs for Opus, Sonnet, and Haiku
+- add your team model names for Opus, Sonnet, and Haiku
 
 ```json
     "claudeCode.environmentVariables": [
-        { "name": "ANTHROPIC_AUTH_TOKEN", "value": "REPLACE_WITH_YOUR_API_KEY"},
-        { "name": "ANTHROPIC_BEDROCK_BASE_URL", "value":"REPLACE_WITH_YOUR_BEDROCK_BASE_URL"},
+        { "name": "ANTHROPIC_AUTH_TOKEN", "value": "<your-ai-verde-api-key>"},
+        { "name": "ANTHROPIC_BEDROCK_BASE_URL", "value":"https://llm-api.cyverse.ai/bedrock"},
         { "name": "CLAUDE_CODE_SKIP_BEDROCK_AUTH", "value":"1"},
         { "name": "CLAUDE_CODE_USE_BEDROCK", "value":"1"},
-        { "name": "ANTHROPIC_DEFAULT_OPUS_MODEL", "value":"my-team-claude-opus-4-6"},
-        { "name": "ANTHROPIC_DEFAULT_SONNET_MODEL", "value":"my-team-claude-sonnet-4-6"},
-        { "name": "ANTHROPIC_DEFAULT_HAIKU_MODEL", "value":"my-team-claude-haiku-4-5"}
+        { "name": "ANTHROPIC_DEFAULT_OPUS_MODEL", "value":"<model name for opus>"},
+        { "name": "ANTHROPIC_DEFAULT_SONNET_MODEL", "value":"<model name for sonnet>"},
+        { "name": "ANTHROPIC_DEFAULT_HAIKU_MODEL", "value":"<model name for haiku>"}
     ],
 ```
 
@@ -61,11 +65,15 @@ For example, with the values filled in:
         { "name": "ANTHROPIC_BEDROCK_BASE_URL", "value":"https://llm-api.cyverse.ai/bedrock"},
         { "name": "CLAUDE_CODE_SKIP_BEDROCK_AUTH", "value":"1"},
         { "name": "CLAUDE_CODE_USE_BEDROCK", "value":"1"},
-        { "name": "ANTHROPIC_DEFAULT_OPUS_MODEL", "value":"my-team-claude-opus-4-6"},
-        { "name": "ANTHROPIC_DEFAULT_SONNET_MODEL", "value":"my-team-claude-sonnet-4-6"},
+        { "name": "ANTHROPIC_DEFAULT_OPUS_MODEL", "value":"my-team-claude-opus-5"},
+        { "name": "ANTHROPIC_DEFAULT_SONNET_MODEL", "value":"my-team-claude-sonnet-5"},
         { "name": "ANTHROPIC_DEFAULT_HAIKU_MODEL", "value":"my-team-claude-haiku-4-5"}
     ],
 ```
+
+!!! Warning
+
+    This setting holds your API key. Add it to your VS Code user settings, not to a project's `.vscode/settings.json`, so the key doesn't get committed with your code.
 
 !!! Note
 
@@ -73,7 +81,7 @@ For example, with the values filled in:
 
 !!! Note
 
-    This setting only applies to the VS Code extension. To use Claude Code in the terminal as well, configure it separately as described in [Using Claude Code](aws_bedrock_claude_code.md).
+    This setting only applies to the VS Code extension. To use Claude Code in the terminal as well, configure it separately as described in [Using Claude Code on Bedrock](aws_bedrock_claude_code.md).
 
 ## 3. Restart VS Code
 

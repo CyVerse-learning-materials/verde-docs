@@ -1,22 +1,22 @@
 # Claude Code (using non-Anthropic Models)
 
-You can follow these instructions to use your VERDE API Key after installing Claude Code. More information on using Claude Code can be found here, [https://code.claude.com/docs/en/overview](https://code.claude.com/docs/en/overview).
+You can follow these instructions to use your AI-VERDE API key after installing Claude Code. More information on using Claude Code can be found here, [https://code.claude.com/docs/en/overview](https://code.claude.com/docs/en/overview).
 
 !!! Note
 
-    These instructions assume you are using a space that is connected to non-Anthropic models. Even though Claude Code is using non-Anthropic models, the API it uses is still Anthropic-style; the API is translated by Verde's LiteLLM into OpenAI-compatible or other supported formats.
+    These instructions assume your course or team is connected to non-Anthropic models. Claude Code still sends Anthropic-style requests; AI-VERDE translates them for the non-Anthropic model.
 
 ## Prerequisites
 
-1. Your VERDE course or team must have access to at least one non-Anthropic model. Coding agents work best with models that support tool use; see the "Supports Tools" column in [Current CyVerse Models](../models-current.md).
-2. Obtain your VERDE API Key. [Instructions can be found here](api-key.md).
+1. Your AI-VERDE course or team must have access to at least one non-Anthropic model. Coding agents work best with models that support tool use; see the "Supports Tools" column in [Current CyVerse Models](../models-current.md).
+2. Obtain your AI-VERDE API key. [Instructions can be found here](api-key.md).
 3. Note the model name(s) you want to use. [Instructions for listing available models can be found here](api-key-models.md).
 4. Install Claude Code. Instructions can be found here, [https://code.claude.com/docs/en/setup](https://code.claude.com/docs/en/setup).
-5. The remaining instructions assume you have an open terminal on a system with Claude Code and bash installed.
+5. The remaining instructions assume a terminal on macOS or Linux with bash and Claude Code installed. On Windows, Option 1 below works the same way, with the file at `%USERPROFILE%\.claude\settings.json`.
 
 ## 1. Configure Claude Code
 
-You can use the same model for all tiers (Opus/Sonnet/Haiku) or you can use different models for each tier. The model names must match the exact model name in LiteLLM, as returned by your model list.
+You can use the same model for all tiers (Opus/Sonnet/Haiku) or you can use different models for each tier. Use the exact model names as returned by your model list.
 
 ### Option 1: `~/.claude/settings.json` (recommended)
 
@@ -42,15 +42,19 @@ For example:
   "env": {
     "ANTHROPIC_BASE_URL": "https://llm-api.cyverse.ai",
     "ANTHROPIC_API_KEY": "sk-xxxxxxxxxxxxxxxxxxxxxx",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "gpt-oss-120b",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "gemma-4-26b-it",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "gemma-4-26b-it",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "gemma-4-26b-it",
-    "ANTHROPIC_MODEL": "gpt-oss-120b"
+    "ANTHROPIC_MODEL": "gemma-4-26b-it"
   }
 }
 ```
 
 If the file already has other settings, add the `env` section alongside them rather than replacing the file.
+
+!!! Warning
+
+    `~/.claude/settings.json` holds your API key. Keep the key in this user-level file, not in a project's `.claude/settings.json`, and don't commit or share it.
 
 ### Option 2: Shell environment variables
 
@@ -83,4 +87,4 @@ The first time Claude Code detects `ANTHROPIC_API_KEY`, it asks whether to use t
 
 ## If you need to change your `ANTHROPIC_API_KEY`
 
-If for some reason you need to change your VERDE API Key, update `ANTHROPIC_API_KEY` wherever you set it in step 1 (`~/.claude/settings.json` or your shell profile), then restart Claude Code. If you previously declined the key prompt, Claude Code ignores the key without asking again; re-enable it with the **Use custom API key** option under `/config`.
+If for some reason you need to change your AI-VERDE API key, update `ANTHROPIC_API_KEY` wherever you set it in step 1 (`~/.claude/settings.json` or your shell profile), then restart Claude Code. If you previously declined the key prompt, Claude Code ignores the key without asking again; re-enable it with the **Use custom API key** option under `/config`.

@@ -49,6 +49,8 @@ Each course has one **Owner** and may have any number of **Co-owners**, in addit
 | Use the course chat and course prompts                  | ✓                | ✓          | ✓   | ✓       |
 | Get a personal API key                                  | ✓                | ✓          | ✓   | ✓       |
 
+*TAs can add members only with the Student or TA role.*
+
 *Tip: If a student says they can’t see the course, check the Members tab first to make sure they are listed.*  
 
 
@@ -71,22 +73,21 @@ The **Prompts feature** lets instructors and TAs design and share structured pro
 
 How to use it:
 
-1. Go to the Prompts tab.  
-2. Write a prompt (e.g., “Summarize today’s lecture into 5 key points”).  
-3. Sharing the prompt is automatic: as soon as it is saved, every member of the course can see it and use it to generate AI responses inside Verde.  
-4. Review outputs to ensure alignment with learning goals.  
+1. Go to the **Prompts** tab.
+2. Write a prompt (e.g., “Summarize today’s lecture into 5 key points”) and save it.
+3. Every member of the course can see and use the prompt as soon as it is saved.
 
 *This feature helps standardize assignments and ensures all students are working from the same AI instructions.*  
 
 
 
 ## API Keys and Integrations
-Instructors can extend Verde beyond the platform using API keys.  
+Instructors can extend AI-VERDE beyond the platform using API keys.  
 
 - **Generate API keys**  
-  - Useful for advanced workflows, automation, or integrating Verde with other systems. See the [AI-VERDE API](../api/index.md) documentation.  
+  - Useful for advanced workflows, automation, or integrating AI-VERDE with other systems. See the [AI-VERDE API](../api/index.md) documentation.  
 - **Why this matters:**  
-  - Keeps Verde flexible, fitting into your department’s existing tools rather than operating as an isolated system.  
+  - Keeps AI-VERDE flexible, fitting into your department’s existing tools rather than operating as an isolated system.  
 
 
 ## Troubleshooting While Managing

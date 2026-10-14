@@ -19,4 +19,4 @@ AI-VERDE acts as a proxy between your application and the underlying model. When
 
 !!! Note
 
-    The Bedrock-style endpoint is only intended for Claude Code. To call Claude models from your own code, use the [Anthropic Python SDK](aws_bedrock_anthropic_sdk_py.md), which uses the Anthropic-style API.
+    The Bedrock-style endpoint is only intended for Claude Code. To call Claude models from your own code, use the [Anthropic Python SDK](api-key-anthropic-sdk-py.md), which uses the Anthropic-style API.

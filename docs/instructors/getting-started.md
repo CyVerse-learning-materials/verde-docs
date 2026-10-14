@@ -1,8 +1,21 @@
-# Creating a Course in AI-VERDE
+# Getting Started as an Instructor
 
 ## Request a Course or Team
 
-To start the process to create a course or team in AI-VERDE, please send an email to **ai-verde-support@cyverse.org**. There is no form to fill out; course and team setup is handled by email.
+To request a course or team in AI-VERDE, email **ai-verde-support@cyverse.org**. Use this template to describe your request:
+
+```text
+Subject: AI-VERDE course or team request: [course or team name]
+
+Course or team name: [name and course code, if applicable]
+Owner: [name and institutional email address]
+Start date: [YYYY-MM-DD]
+End date: [YYYY-MM-DD, or ongoing]
+Expected enrollment: [number of students or team members]
+Intended use: [assignments, research tasks, or other activities]
+```
+
+If any details are undecided, note that in your email. You can add your roster after the course or team is created, as described below.
 
 ## What Happens Next
 
@@ -21,5 +34,4 @@ Once your course/team is created, you can add your students, TAs, and co-instruc
 
 ## Contact and Feedback
 
-If you are happy with AI-VERDE, we’d love your feedback!
-Please send comments or critiques to: **ai-verde-support@cyverse.org**
+We’d love your feedback. Please send it to: **ai-verde-support@cyverse.org**

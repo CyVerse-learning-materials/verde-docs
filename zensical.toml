@@ -6,7 +6,7 @@ site_url = "https://aiverde-docs.cyverse.ai"
 repo_name = "AI-VERDE Docs"
 repo_url = "https://github.com/CyVerse-learning-materials/verde-docs"
 edit_uri = "edit/main/docs/"
-copyright = "Copyright &copy; 2025 CyVerse"
+copyright = "Copyright &copy; 2025&ndash;2026 CyVerse"
 docs_dir = "docs"
 site_dir = "site"
 use_directory_urls = true
@@ -27,26 +27,27 @@ nav = [
     { "Using Your API Key for AWS Bedrock Models" = [
       { "What is AWS Bedrock" = "api/aws_bedrock.md" },
       { "Using Claude Code" = "api/aws_bedrock_claude_code.md" },
-      { "Using VSCode Claude Code Extension" = "api/aws_bedrock_vscode_claude_code.md" },
+      { "Using Claude Code for VS Code" = "api/aws_bedrock_vscode_claude_code.md" },
     ] },
     { "Using Your API Key in Code" = [
       { "LangChain" = "api/api-key-langchain.md" },
       { "LlamaIndex" = "api/api-key-llamaindex.md" },
-      { "Anthropic Python SDK" = "api/aws_bedrock_anthropic_sdk_py.md" },
+      { "Anthropic Python SDK" = "api/api-key-anthropic-sdk-py.md" },
     ] },
     { "Using CLI Coding Assistants" = [
-      { "Claude Code Router" = "api/claude-code-router.md" },
-      { "Aider" = "api/aider.md" },
       { "Claude Code (using Anthropic Models)" = "api/api-key-claude.md" },
       { "Claude Code (using non-Anthropic Models)" = "api/api-key-claude-non-anthropic.md" },
       { "Codex" = "api/api-key-codex.md" },
       { "OpenCode" = "api/api-key-opencode.md" },
+      { "Claude Code Router" = "api/claude-code-router.md" },
+      { "Aider" = "api/aider.md" },
     ] },
     { "Using IDEs" = [
-      { "VSCode" = "api/api-key-vscode.md" },
+      { "vscode-openai extension" = "api/api-key-vscode.md" },
+      { "Claude Code for VS Code (using Anthropic Models)" = "api/api-key-vscode-claude-code.md" },
     ] },
     { "Using Desktop Clients" = [
-      { "ChatboxAI.app" = "api/chatboxai.md" },
+      { "Chatbox AI" = "api/chatboxai.md" },
     ] },
   ] },
   { "For Instructors (and staff)" = [
@@ -87,12 +88,13 @@ toggle = { icon = "material/brightness-4", name = "Switch to light mode" }
 
 [project.plugins.search]
 
-# Keep the old api-token URLs working after the pages were renamed to api-key.
+# Keep old URLs working after pages were renamed.
 [project.plugins.redirects.redirect_maps]
 "api/api-token.md" = "api/api-key.md"
 "api/api-token-langchain.md" = "api/api-key-langchain.md"
 "api/api-token-llamaindex.md" = "api/api-key-llamaindex.md"
 "api/api-token-vscode.md" = "api/api-key-vscode.md"
+"api/aws_bedrock_anthropic_sdk_py.md" = "api/api-key-anthropic-sdk-py.md"
 
 [project.markdown_extensions]
 admonition = {}

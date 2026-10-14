@@ -9,7 +9,7 @@ Before using the AI-VERDE chat interface, ensure you are signed in with your ins
 !!! Note
     AI-VERDE is currently only available to the University of Arizona community.
 
-1. Go to [https://chat.cyverse.ai/](https://chat.cyverse.ai/){target=_new}.
+1. Go to [https://chat.cyverse.ai/](https://chat.cyverse.ai/){target=_blank}.
 2. Click the **Sign In** button. You will be taken to CILogon.
 3. On CILogon, select your identity provider. For University of Arizona users, select **The University of Arizona**.
 4. Click the **Log On** button.
@@ -36,7 +36,7 @@ After clicking on the course or team card, the page will show a text box where y
 
 You can ask follow-up questions for further clarification, request examples, or explore related topics.
 
-#### Example:
+### Example
 
 1. **Initial Question**: "Explain the concept of ecosystems in biology."
 2. **Follow-Up**: "Can you provide examples of different types of ecosystems?"
