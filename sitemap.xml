@@ -10,6 +10,9 @@
         <loc>https://aiverde-docs.cyverse.ai/api/aider/</loc>
       </url>
       <url>
+        <loc>https://aiverde-docs.cyverse.ai/api/api-key-anthropic-sdk-py/</loc>
+      </url>
+      <url>
         <loc>https://aiverde-docs.cyverse.ai/api/api-key-claude-non-anthropic/</loc>
       </url>
       <url>
@@ -25,28 +28,22 @@
         <loc>https://aiverde-docs.cyverse.ai/api/api-key-llamaindex/</loc>
       </url>
       <url>
-        <loc>https://aiverde-docs.cyverse.ai/api/api-key-macos/</loc>
-      </url>
-      <url>
-        <loc>https://aiverde-docs.cyverse.ai/api/api-key-macterminal/</loc>
-      </url>
-      <url>
         <loc>https://aiverde-docs.cyverse.ai/api/api-key-models/</loc>
       </url>
       <url>
         <loc>https://aiverde-docs.cyverse.ai/api/api-key-opencode/</loc>
       </url>
       <url>
-        <loc>https://aiverde-docs.cyverse.ai/api/api-key-vscode/</loc>
+        <loc>https://aiverde-docs.cyverse.ai/api/api-key-vscode-claude-code/</loc>
+      </url>
+      <url>
+        <loc>https://aiverde-docs.cyverse.ai/api/api-key-vscode-codex/</loc>
       </url>
       <url>
         <loc>https://aiverde-docs.cyverse.ai/api/api-key/</loc>
       </url>
       <url>
         <loc>https://aiverde-docs.cyverse.ai/api/aws_bedrock/</loc>
-      </url>
-      <url>
-        <loc>https://aiverde-docs.cyverse.ai/api/aws_bedrock_anthropic_sdk_py/</loc>
       </url>
       <url>
         <loc>https://aiverde-docs.cyverse.ai/api/aws_bedrock_claude_code/</loc>
@@ -61,19 +58,16 @@
         <loc>https://aiverde-docs.cyverse.ai/api/claude-code-router/</loc>
       </url>
       <url>
-        <loc>https://aiverde-docs.cyverse.ai/getting-started/</loc>
+        <loc>https://aiverde-docs.cyverse.ai/api/common-errors/</loc>
       </url>
       <url>
-        <loc>https://aiverde-docs.cyverse.ai/instructors/getting-started-openai/</loc>
+        <loc>https://aiverde-docs.cyverse.ai/getting-started/</loc>
       </url>
       <url>
         <loc>https://aiverde-docs.cyverse.ai/instructors/getting-started/</loc>
       </url>
       <url>
         <loc>https://aiverde-docs.cyverse.ai/instructors/managing-a-course/</loc>
-      </url>
-      <url>
-        <loc>https://aiverde-docs.cyverse.ai/instructors/troubleshooting/</loc>
       </url>
       <url>
         <loc>https://aiverde-docs.cyverse.ai/models-current/</loc>

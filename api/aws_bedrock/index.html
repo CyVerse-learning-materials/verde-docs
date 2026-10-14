@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://aiverde-docs.cyverse.ai/api/aws_bedrock/">
       
       
-        <link rel="prev" href="../api-key-models/">
+        <link rel="prev" href="../common-errors/">
       
       
         <link rel="next" href="../aws_bedrock_claude_code/">
@@ -267,6 +267,8 @@
       
         
       
+        
+      
     
     
     
@@ -293,6 +295,8 @@
   
     
       
+      
+        
       
         
       
@@ -577,6 +581,8 @@
       
         
       
+        
+      
     
     
     
@@ -670,6 +676,33 @@
     
   
   Getting a List of Models
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Common API Errors
 
     
   </span>
@@ -891,7 +924,7 @@
   <span class="md-ellipsis">
     
   
-  Using VSCode Claude Code Extension
+  Using Claude Code for VS Code
 
     
   </span>
@@ -1031,7 +1064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws_bedrock_anthropic_sdk_py/" class="md-nav__link">
+      <a href="../api-key-anthropic-sdk-py/" class="md-nav__link">
         
   
   
@@ -1122,60 +1155,6 @@
 
             </label>
             <ul class="md-nav__list" data-md-scrollfix>
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../claude-code-router/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Claude Code Router
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../aider/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Aider
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
               
                 
                   
@@ -1285,6 +1264,60 @@
 
                 
               
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../claude-code-router/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Claude Code Router
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Aider
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
             </ul>
           </nav>
         
@@ -1302,6 +1335,8 @@
   
     
     
+      
+        
       
         
       
@@ -1354,14 +1389,41 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-key-vscode/" class="md-nav__link">
+      <a href="../api-key-vscode-claude-code/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  VSCode
+  Claude Code for VS Code (using Anthropic Models)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-key-vscode-codex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Codex for VS Code
 
     
   </span>
@@ -1450,7 +1512,7 @@
   <span class="md-ellipsis">
     
   
-  ChatboxAI.app
+  Chatbox AI
 
     
   </span>
@@ -1488,6 +1550,8 @@
   
     
     
+      
+        
       
         
       
@@ -1548,6 +1612,33 @@
     
   
   Getting Started
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../instructors/managing-a-course/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Managing a Course
 
     
   </span>
@@ -1656,7 +1747,7 @@
 <p>AI-VERDE acts as a proxy between your application and the underlying model. When you send a request to the AI-VERDE endpoint, AI-VERDE authenticates it against your team or course budget, applies any configured guardrails, then forwards the request to the appropriate model — which may be hosted on AWS Bedrock. For Claude Code, AI-VERDE exposes a Bedrock-compatible endpoint at <code>/bedrock</code>, so Claude Code can use its built-in Bedrock support while AI-VERDE handles authentication and budgets. Other clients should use AI-VERDE's OpenAI-compatible or Anthropic-style endpoints instead; see <a href="../#base-url-and-authentication">Base URL and Authentication</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The Bedrock-style endpoint is only intended for Claude Code. To call Claude models from your own code, use the <a href="../aws_bedrock_anthropic_sdk_py/">Anthropic Python SDK</a>, which uses the Anthropic-style API.</p>
+<p>The Bedrock-style endpoint is only intended for Claude Code. To call Claude models from your own code, use the <a href="../api-key-anthropic-sdk-py/">Anthropic Python SDK</a>, which uses the Anthropic-style API.</p>
 </div>
 
 
@@ -1695,7 +1786,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2025 CyVerse
+      Copyright &copy; 2025&ndash;2026 CyVerse
     </div>
   
   

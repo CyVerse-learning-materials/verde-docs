@@ -267,6 +267,8 @@
       
         
       
+        
+      
     
     
     
@@ -293,6 +295,8 @@
   
     
       
+      
+        
       
         
       
@@ -577,6 +581,8 @@
       
         
       
+        
+      
     
     
     
@@ -670,6 +676,33 @@
     
   
   Getting a List of Models
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Common API Errors
 
     
   </span>
@@ -941,7 +974,7 @@
   <span class="md-ellipsis">
     
   
-  Using VSCode Claude Code Extension
+  Using Claude Code for VS Code
 
     
   </span>
@@ -1081,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aws_bedrock_anthropic_sdk_py/" class="md-nav__link">
+      <a href="../api-key-anthropic-sdk-py/" class="md-nav__link">
         
   
   
@@ -1172,60 +1205,6 @@
 
             </label>
             <ul class="md-nav__list" data-md-scrollfix>
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../claude-code-router/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Claude Code Router
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../aider/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Aider
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
               
                 
                   
@@ -1335,6 +1314,60 @@
 
                 
               
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../claude-code-router/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Claude Code Router
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Aider
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
             </ul>
           </nav>
         
@@ -1352,6 +1385,8 @@
   
     
     
+      
+        
       
         
       
@@ -1404,14 +1439,41 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-key-vscode/" class="md-nav__link">
+      <a href="../api-key-vscode-claude-code/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  VSCode
+  Claude Code for VS Code (using Anthropic Models)
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-key-vscode-codex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Codex for VS Code
 
     
   </span>
@@ -1500,7 +1562,7 @@
   <span class="md-ellipsis">
     
   
-  ChatboxAI.app
+  Chatbox AI
 
     
   </span>
@@ -1538,6 +1600,8 @@
   
     
     
+      
+        
       
         
       
@@ -1598,6 +1662,33 @@
     
   
   Getting Started
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../instructors/managing-a-course/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Managing a Course
 
     
   </span>
@@ -1742,6 +1833,10 @@
 
 <h1 id="using-claude-code-with-ai-verde">Using Claude Code with AI-VERDE<a class="headerlink" href="#using-claude-code-with-ai-verde" title="Permanent link">&para;</a></h1>
 <p>Claude Code is Anthropic's official CLI coding assistant. AI-VERDE can serve as the backend for Claude Code, routing requests through AI-VERDE's budget controls and guardrails to Anthropic Claude models hosted on AWS Bedrock.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If your course or team's Claude models are hosted on AWS Bedrock, we recommend using this Bedrock-style setup with Claude Code rather than the <a href="../api-key-claude/">Anthropic-style setup</a>. Ask your instructor or team lead if you're unsure where your models are hosted.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Unlike the <a href="../api-key-claude/">non-Bedrock Claude Code setup</a>, which uses <code>ANTHROPIC_API_KEY</code>, the Bedrock setup must put your AI-VERDE API key in <code>ANTHROPIC_AUTH_TOKEN</code>. When talking to a Bedrock endpoint, Claude Code only sends <code>ANTHROPIC_AUTH_TOKEN</code>; an <code>ANTHROPIC_API_KEY</code> would be ignored.</p>
@@ -1749,9 +1844,9 @@
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Obtain your <strong>AI-VERDE API key</strong> and note the <strong>AI-VERDE base URL</strong>. The base URL used in the environment variables ends in <code>/bedrock</code> rather than <code>/v1</code>. <a href="../api-key/">Instructions can be found here</a>.</li>
-<li>Note the <strong>Claude model ID</strong> for Opus, Sonnet, and Haiku. <a href="../api-key-models/">Instructions for listing available models can be found here</a>. Model names in AI-VERDE are prefixed with an identifier for your course or team, separated by a dash or a slash (e.g. <code>my-team-claude-sonnet-4-6</code> or <code>my-team/claude-sonnet-4-6</code>).</li>
+<li>Note the <strong>Claude model ID</strong> for Opus, Sonnet, and Haiku. <a href="../api-key-models/">Instructions for listing available models can be found here</a>. Model names in AI-VERDE are prefixed with an identifier for your course or team, separated by a dash or a slash (e.g. <code>my-team-claude-sonnet-5</code> or <code>my-team/claude-sonnet-5</code>).</li>
 <li>Install <strong>Claude Code</strong>. Instructions can be found at <a href="https://code.claude.com/docs/en/setup">https://code.claude.com/docs/en/setup</a>.</li>
-<li>The remaining instructions assume you have an open terminal with Claude Code installed on Linux or macOS.</li>
+<li>The remaining instructions assume a terminal on macOS or Linux with bash and Claude Code installed. On Windows, Option 1 below works the same way, with the file at <code>%USERPROFILE%\.claude\settings.json</code>.</li>
 </ol>
 <h2 id="1-configure-claude-code">1. Configure Claude Code<a class="headerlink" href="#1-configure-claude-code" title="Permanent link">&para;</a></h2>
 <h3 id="option-1-claudesettingsjson-recommended">Option 1: <code>~/.claude/settings.json</code> (recommended)<a class="headerlink" href="#option-1-claudesettingsjson-recommended" title="Permanent link">&para;</a></h3>
@@ -1775,13 +1870,17 @@
 <span class="w">    </span><span class="nt">"ANTHROPIC_BEDROCK_BASE_URL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://llm-api.cyverse.ai/bedrock"</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">"CLAUDE_CODE_SKIP_BEDROCK_AUTH"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">"CLAUDE_CODE_USE_BEDROCK"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"ANTHROPIC_DEFAULT_OPUS_MODEL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my-team-claude-opus-4-6"</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"ANTHROPIC_DEFAULT_SONNET_MODEL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my-team-claude-sonnet-4-6"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"ANTHROPIC_DEFAULT_OPUS_MODEL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my-team-claude-opus-5"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"ANTHROPIC_DEFAULT_SONNET_MODEL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my-team-claude-sonnet-5"</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">"ANTHROPIC_DEFAULT_HAIKU_MODEL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my-team-claude-haiku-4-5"</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>If the file already has other settings, add the <code>env</code> section alongside them rather than replacing the file.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><code>~/.claude/settings.json</code> holds your API key. Keep the key in this user-level file, not in a project's <code>.claude/settings.json</code>, and don't commit or share it.</p>
+</div>
 <h3 id="option-2-shell-environment-variables">Option 2: Shell environment variables<a class="headerlink" href="#option-2-shell-environment-variables" title="Permanent link">&para;</a></h3>
 <p>Alternatively, export the same variables in your terminal before launching Claude Code:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_AUTH_TOKEN</span><span class="o">=</span><span class="s2">"&lt;your-ai-verde-api-key&gt;"</span>
@@ -1803,7 +1902,7 @@
 </code></pre></div>
 <p>You can run <code>/status</code> inside Claude Code to confirm it is using Amazon Bedrock with the AI-VERDE base URL.</p>
 <h2 id="if-you-need-to-change-your-api-key">If you need to change your API Key<a class="headerlink" href="#if-you-need-to-change-your-api-key" title="Permanent link">&para;</a></h2>
-<p>If for some reason you need to change your VERDE API Key, update <code>ANTHROPIC_AUTH_TOKEN</code> wherever you set it in step 1 (<code>~/.claude/settings.json</code> or your shell profile), then restart Claude Code.</p>
+<p>If for some reason you need to change your AI-VERDE API key, update <code>ANTHROPIC_AUTH_TOKEN</code> wherever you set it in step 1 (<code>~/.claude/settings.json</code> or your shell profile), then restart Claude Code.</p>
 
 
 
@@ -1841,7 +1940,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2025 CyVerse
+      Copyright &copy; 2025&ndash;2026 CyVerse
     </div>
   
   
