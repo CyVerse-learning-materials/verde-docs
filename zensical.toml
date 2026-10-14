@@ -23,6 +23,7 @@ nav = [
       { "What is the AI-VERDE API" = "api/index.md" },
       { "Obtaining your AI-VERDE API Key" = "api/api-key.md" },
       { "Getting a List of Models" = "api/api-key-models.md" },
+      { "Common API Errors" = "api/common-errors.md" },
     ] },
     { "Using Your API Key for AWS Bedrock Models" = [
       { "What is AWS Bedrock" = "api/aws_bedrock.md" },
